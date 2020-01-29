@@ -1,2 +1,2 @@
 # pixtola
-My professional homepage and creative portfolio
+The creative portfolio of product designer Tyler Richardson.
