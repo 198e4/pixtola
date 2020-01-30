@@ -2,7 +2,7 @@ const functions = require('firebase-functions');
 const express = require('express');
 const engines = require('consolidate');
 const path = require('path');
-var hbs = require('hbs');
+const hbs = require('hbs');
 
 // Create Express App
 const app = express();
@@ -16,12 +16,6 @@ app.set('view engine', 'hbs');
 app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysizes')));
 
 // Create Routes
-
-// app.get('/', (request, response) => {
-// 	response.set('Cache-Control', 'public, max-age=300, s-maxage=600');
-// 	response.render('index', {facts});
-// });
-
 app.get('/', function(req, res, next) {
 	res.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
 	res.render('index', {
@@ -30,5 +24,4 @@ app.get('/', function(req, res, next) {
 });
 
 // Deploy Express App As A Firebase Cloud Function
-
 exports.app = functions.https.onRequest(app);
