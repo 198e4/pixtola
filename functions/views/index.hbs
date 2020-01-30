@@ -54,7 +54,11 @@
 			<!-- Card / About Me -->
 			<span></span>
 			<div class="card">
-				<img src="/images/about.png" alt="A Bit About Me" class="card-art" />
+				<img data-srcset="/images/about@1x.png,
+						   /images/about@2x.png 2x,
+						   /images/about@3x.png 3x"
+					data-src="/images/about@3x.png"
+					src="/images/about@3x.png" alt="A Bit About Me" class="card-art lazyload">
 				<h3 class="card-title">A Bit About Me</h2>
 				<p class="card-copy">Hey there, my name is <a href="https://www.linkedin.com/in/tyler-richardson-775228a0/" target="_blank">Tyler</a> and thank you for your interest in my work. I am a Product Designer living in the San Francisco Bay Area that’s worked at a startup named <a href="https://quotedcar.com" target="_blank">QuotedCar</a> for the past four years.</p>
 				<p class="card-copy">I thrive in a world where I can put my creative problem solving skills to work everyday. I lean hard on my experience in UX Design, UI Design, and Front-End Development to create solutions to complex interaction
@@ -68,7 +72,11 @@
 			<!-- Card / Skills & Tools -->
 			<span></span>
 			<div class="card">
-				<img src="/images/skills.png" alt="Skills &amp; Tools" class="card-art">
+				<img data-srcset="/images/skills@1x.png,
+						   /images/skills@2x.png 2x,
+						   /images/skills@3x.png 3x"
+					data-src="/images/skills@3x.png"
+					src="/images/skills@3x.png" alt="Skills & Tools" class="card-art lazyload">
 				<h3 class="card-title">Skills &amp; Tools</h2>
 				<p class="card-copy">These tags represent the methods, software and web technologies that I use regularly in my design work.</p>
 				<h4 class="card-subtitle">UX Design &amp; Interaction Design</h4>
@@ -135,21 +143,41 @@
 			<!-- Card / Portofolio -->
 			<span></span>
 			<div class="card">
-				<img src="/images/portfolio.png" alt="My Portfolio" class="card-art">
+				<img data-srcset="/images/portfolio@1x.png,
+						   /images/portfolio@2x.png 2x,
+						   /images/portfolio@3x.png 3x"
+					data-src="/images/portfolio@3x.png"
+					src="/images/portfolio@3x.png" alt="My Portfolio" class="card-art lazyload">
 				<h3 class="card-title">My Portfolio</h2>
 				<p class="card-copy">Through these links you can learn more about me, and my creative work. Please email me through the request button below to get a copy of my private portfolio PDF. Thanks for checking me out!</a>
 				<div class="card-button-row">
 					<a href="https://www.linkedin.com/in/tyler-richardson-775228a0/" class="card-brandmark" target="_blank">
-						<img src="/images/logo-linkedin.png" alt="LinkedIn" class="brand-logo">
+						<img data-srcset="/images/logo-linkedin@1x.png,
+								   	   /images/logo-linkedin@2x.png 2x,
+								        /images/logo-linkedin@3x.png 3x"
+							data-src="/images/logo-linkedin@3x.png"
+							src="/images/logo-linkedin@3x.png" alt="LinkedIn" class="brand-logo lazyload">
 					</a>
 					<a href="https://dribbble.com/198e4" class="card-brandmark" target="_blank">
-						<img src="/images/logo-dribbble.png" alt="Dribbble" class="brand-logo">
+						<img data-srcset="/images/logo-dribbble@1x.png,
+								        /images/logo-dribbble@2x.png 2x,
+								        /images/logo-dribbble@3x.png 3x"
+							data-src="/images/logo-dribbble@3x.png"
+							src="/images/logo-dribbble@3x.png" alt="Dribbble" class="brand-logo lazyload">
 					</a>
 					<a href="https://github.com/198e4" class="card-brandmark" target="_blank">
-						<img src="/images/logo-github.png" alt="GitHub" class="brand-logo">
+						<img data-srcset="/images/logo-github@1x.png,
+								        /images/logo-github@2x.png 2x,
+								        /images/logo-github@3x.png 3x"
+							data-src="/images/logo-github@3x.png"
+							src="/images/logo-github@3x.png" alt="GitHub" class="brand-logo lazyload">
 					</a>
 					<a href="https://codepen.io/198e4" class="card-brandmark" target="_blank">
-						<img src="/images/logo-codepen.png" alt="CodePen" class="brand-logo">
+						<img data-srcset="/images/logo-codepen@1x.png,
+								        /images/logo-codepen@2x.png 2x,
+								        /images/logo-codepen@3x.png 3x"
+							data-src="/images/logo-codepen@3x.png"
+							src="/images/logo-codepen@3x.png" alt="CodePen" class="brand-logo lazyload">
 					</a>
 					<a href="mailto:tyler.colby.richardson@gmail.com?subject=Portfolio Request" class="card-button heartbeat">Request My Portfolio</a>
 				</div>
@@ -161,7 +189,9 @@
 			<div class="copyright-year">
 				<div class="copyright-year--left">20</div>
 				<div class="copyright-year--middle">
-					<img src="../images/copyright.svg" alt="Copyright Tyler Richardson All Rights Reserved" class="copyright-symbol">
+					<img data-srcset="/images/copyright.svg"
+						data-src="/images/copyright.svg"
+						src="/images/copyright.svg" alt="Copyright Tyler Richardson All Rights Reserved" class="copyright-symbol lazyload">
 				</div>
 				<div class="copyright-year--right">20</div>
 			</div>
@@ -180,6 +210,8 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<!-- Lettering JS -->
 		<script src="/javascripts/jquery.lettering-0.6.1.min.js"></script>
+		<!-- Lazysizes -->
+		<script src="javascripts/plugins/lazysizes.min.js" async></script>
 		<!-- UI -->
 		<script src="/javascripts/ui.js"></script>
 	</body>
