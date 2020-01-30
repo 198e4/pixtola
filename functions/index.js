@@ -23,7 +23,7 @@ app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysi
 // });
 
 app.get('/', function(req, res, next) {
-	response.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
+	res.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
 	res.render('index', {
 		// title: ''
 	});
