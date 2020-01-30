@@ -292,7 +292,7 @@ input:-webkit-autofill {
 .hero {
   width: calc(100vw - 50px);
   height: calc(100vh - 50px);
-  background-image: url("/images/hero-bg--large.jpg");
+  background-image: url("/images/hero--lg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 25% 0%;
@@ -315,7 +315,7 @@ input:-webkit-autofill {
     height: calc(100vh - 100px);
     margin: 0;
     border-radius: 0;
-    background-image: url("/images/hero-bg--small.jpg");
+    background-image: url("/images/hero--sm.jpg");
     background-attachment: initial;
   }
 }
