@@ -27,11 +27,11 @@
 
 	// Type Styles
 
-		@import url('https://fonts.googleapis.com/css?family=Montserrat:500,900|Playfair+Display|Playfair+Display+SC:400,900,900i&display=swap');
-
-		$font-primary: 'Playfair Display SC', serif;
-		$font-secondary: 'Montserrat', sans-serif;
-		$font-standard: 'Playfair Display', serif;
+		// Titles
+		$font-primary: 'Playfair Display SC', serif; // 900 in use
+		$font-secondary: 'Montserrat', sans-serif; // 400, 900 in use
+		// Copy
+		$font-standard: 'Playfair Display', serif; // 400 in use
 
 	// Colors
 
@@ -1009,6 +1009,7 @@
 				font-family: $font-primary;
 				color: $black-100;
 				font-size: 18px;
+				font-weight: 900;
 				letter-spacing: -0.85px;
 				line-height: 26px;
 				text-align: left;
@@ -1093,7 +1094,7 @@
 					height: auto;
 					// width: auto;
 					color: $black-100;
-					font-family: $font-standard;
+					font-family: $font-primary;
 					font-size: 18px;
 					font-weight: 900;
 					text-align: center;
@@ -1346,9 +1347,9 @@
 			}
 
 			.footer .copyright-copy {
-				font-family: $font-secondary;
+				font-family: $font-standard;
 				font-size: 10px;
-				font-weight: 500;
+				font-weight: 400;
 				color: $white-100;
 				text-align: center;
 				margin: 5px 0 0 0;

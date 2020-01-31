@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:500,900|Playfair+Display|Playfair+Display+SC:400,900,900i&display=swap");
 .heartbeat {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
@@ -671,6 +670,7 @@ h1.hero-title > .char16 {
   font-family: "Playfair Display SC", serif;
   color: #030b08;
   font-size: 18px;
+  font-weight: 900;
   letter-spacing: -0.85px;
   line-height: 26px;
   text-align: left;
@@ -707,7 +707,7 @@ h1.hero-title > .char16 {
 .card-button-row .card-button {
   height: auto;
   color: #030b08;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display SC", serif;
   font-size: 18px;
   font-weight: 900;
   text-align: center;
@@ -871,9 +871,9 @@ h1.hero-title > .char16 {
   padding: 0;
 }
 .footer .copyright-copy {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 10px;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
   text-align: center;
   margin: 5px 0 0 0;
