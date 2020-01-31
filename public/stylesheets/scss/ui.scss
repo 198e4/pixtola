@@ -12,18 +12,18 @@
 		}
 
 		// [MIXIN #02] 1-12 Column Grid with LEFT Sidebar, (d)(t)(m)--sb(5-50)--(1-12)c
-		@mixin sidebarLeft($percentage, $columns, $areas) {
-			-ms-grid-columns: $percentage (1fr)[$columns];
-			grid-template-columns: $percentage repeat($columns, 1fr);
-			grid-template-areas: $areas;
-		}
+		// @mixin sidebarLeft($percentage, $columns, $areas) {
+		// 	-ms-grid-columns: $percentage (1fr)[$columns];
+		// 	grid-template-columns: $percentage repeat($columns, 1fr);
+		// 	grid-template-areas: $areas;
+		// }
 
 		// [MIXIN #03] 1-12 Column Grid with RIGHT Sidebar, (d)(t)(m)--(1-12)c--sb(5-50)
-		@mixin sidebarRight($percentage, $columns, $areas) {
-			-ms-grid-columns: (1fr)[$columns] $percentage;
-			grid-template-columns: repeat($columns, 1fr) $percentage;
-			grid-template-areas: $areas;
-		}
+// @mixin sidebarRight($percentage, $columns, $areas) {
+// 	-ms-grid-columns: (1fr)[$columns] $percentage;
+// 	grid-template-columns: repeat($columns, 1fr) $percentage;
+// 	grid-template-areas: $areas;
+// }
 
 	// Type Styles
 
@@ -188,29 +188,29 @@
 			padding: 25px;
 		}
 
-			.d1c {
-				@include grid(1, "col");
-			}
+			// .d1c {
+			// 	@include grid(1, "col");
+			// }
 
-			.d2c {
-				@include grid(2, "col col");
-			}
+			// .d2c {
+			// 	@include grid(2, "col col");
+			// }
 
-			.d3c {
-				@include grid(3, "col col col");
-			}
+			// .d3c {
+			// 	@include grid(3, "col col col");
+			// }
 
-			.d4c {
-				@include grid(4, "col col col col");
-			}
+			// .d4c {
+			// 	@include grid(4, "col col col col");
+			// }
 
-			.d5c {
-				@include grid(5, "col col col col col");
-			}
+			// .d5c {
+			// 	@include grid(5, "col col col col col");
+			// }
 
-			.d6c {
-				@include grid(6, "col col col col col col");
-			}
+			// .d6c {
+			// 	@include grid(6, "col col col col col col");
+			// }
 
 			@media (max-width: 1300px) {
 
@@ -218,25 +218,25 @@
 					@include grid(1, "col");
 				}
 
-				.t2c {
-					@include grid(2, "col col");
-				}
+				// .t2c {
+				// 	@include grid(2, "col col");
+				// }
 
-				.t3c {
-					@include grid(3, "col col col");
-				}
+				// .t3c {
+				// 	@include grid(3, "col col col");
+				// }
 
-				.t4c {
-					@include grid(4, "col col col col");
-				}
+				// .t4c {
+				// 	@include grid(4, "col col col col");
+				// }
 
-				.t5c {
-					@include grid(5, "col col col col col");
-				}
+				// .t5c {
+				// 	@include grid(5, "col col col col col");
+				// }
 
-				.t6c {
-					@include grid(6, "col col col col col col");
-				}
+				// .t6c {
+				// 	@include grid(6, "col col col col col col");
+				// }
 
 			}
 
@@ -246,25 +246,25 @@
 					@include grid(1, "col");
 				}
 
-				.m2c {
-					@include grid(2, "col col");
-				}
+				// .m2c {
+				// 	@include grid(2, "col col");
+				// }
 
-				.m3c {
-					@include grid(3, "col col col");
-				}
+				// .m3c {
+				// 	@include grid(3, "col col col");
+				// }
 
-				.m4c {
-					@include grid(4, "col col col col");
-				}
+				// .m4c {
+				// 	@include grid(4, "col col col col");
+				// }
 
-				.m5c {
-					@include grid(5, "col col col col col");
-				}
+				// .m5c {
+				// 	@include grid(5, "col col col col col");
+				// }
 
-				.m6c {
-					@include grid(6, "col col col col col col");
-				}
+				// .m6c {
+				// 	@include grid(6, "col col col col col col");
+				// }
 
 			}
 
