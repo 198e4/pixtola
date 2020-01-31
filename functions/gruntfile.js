@@ -1,8 +1,17 @@
 // Grunt Wrapper Function
 module.exports = function(grunt) {
+
 	// Initialize Grunt Task Configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
+		jshint: {
+			files: ['../public/javascripts/ui.js'],
+			options: {
+				globals: {
+					jQuery: true
+				}
+			}
+		},
 		uglify: {
 			dist: {
 				files: {
@@ -14,11 +23,10 @@ module.exports = function(grunt) {
 	});
 
 	// Load Grunt Tasks Saved in Package.json as devDependencies
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	// Register Tasks
-	// grunt.registerTask('default', 'Log some stuff', function() {
-	// 	grunt.log.write('Starting Task Runner... ').ok();
-	// });
-	grunt.registerTask('default', ['uglify']);
+	grunt.registerTask('default', ['jshint', 'uglify']);
+
 };
