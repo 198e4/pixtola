@@ -3922,3 +3922,106 @@
 [debug] [2020-01-30T20:43:38.264Z] [runtime-status] [11844] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2020-01-30T20:43:38.265Z] [runtime-status] [11844] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
 [debug] [2020-01-30T20:43:38.431Z] [worker-~diagnostic~-8f17a321-8a27-4dd4-bbc6-6bdee4a92aed]: IDLE
+[debug] [2020-01-31T18:11:37.862Z] File /Users/mbp/dev/pixtola/functions/index.js changed, reloading triggers
+[debug] [2020-01-31T18:11:38.880Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T18:11:38.881Z] [worker-~diagnostic~-8f17a321-8a27-4dd4-bbc6-6bdee4a92aed]: FINISHING
+[debug] [2020-01-31T18:11:38.885Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T18:11:38.885Z] [worker-pool] Cleaned up workers for app: 1 --> 0
+[debug] [2020-01-31T18:11:38.898Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T18:11:38.898Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T18:11:38.898Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T18:11:38.899Z] [worker-~diagnostic~-8cf14eb2-fb79-47f2-b5c5-6006ba7027ae]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_13961.sock
+[debug] [2020-01-31T18:11:38.899Z] [worker-~diagnostic~-8cf14eb2-fb79-47f2-b5c5-6006ba7027ae]: BUSY
+[debug] [2020-01-31T18:11:38.903Z] [worker-~diagnostic~-8f17a321-8a27-4dd4-bbc6-6bdee4a92aed]: exited
+[debug] [2020-01-31T18:11:38.903Z] [worker-~diagnostic~-8f17a321-8a27-4dd4-bbc6-6bdee4a92aed]: FINISHED
+[debug] [2020-01-31T18:11:39.460Z] [runtime-status] [13961] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-01-31T18:11:39.461Z] [runtime-status] [13961] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T18:11:39.465Z] [runtime-status] [13961] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T18:11:39.469Z] [runtime-status] [13961] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:11:39.470Z] [runtime-status] [13961] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:11:39.766Z] [worker-~diagnostic~-8cf14eb2-fb79-47f2-b5c5-6006ba7027ae]: IDLE
+[debug] [2020-01-31T18:11:42.654Z] File /Users/mbp/dev/pixtola/functions/index.js changed, reloading triggers
+[debug] [2020-01-31T18:11:43.655Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T18:11:43.655Z] [worker-~diagnostic~-8cf14eb2-fb79-47f2-b5c5-6006ba7027ae]: FINISHING
+[debug] [2020-01-31T18:11:43.655Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T18:11:43.660Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T18:11:43.660Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T18:11:43.660Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T18:11:43.661Z] [worker-~diagnostic~-cdb4cf49-9b64-4c2d-a528-2e3f54589dad]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_13963.sock
+[debug] [2020-01-31T18:11:43.661Z] [worker-~diagnostic~-cdb4cf49-9b64-4c2d-a528-2e3f54589dad]: BUSY
+[debug] [2020-01-31T18:11:43.662Z] [worker-~diagnostic~-8cf14eb2-fb79-47f2-b5c5-6006ba7027ae]: exited
+[debug] [2020-01-31T18:11:43.662Z] [worker-~diagnostic~-8cf14eb2-fb79-47f2-b5c5-6006ba7027ae]: FINISHED
+[debug] [2020-01-31T18:11:43.909Z] [runtime-status] [13963] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-01-31T18:11:43.913Z] [runtime-status] [13963] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T18:11:43.913Z] [runtime-status] [13963] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T18:11:43.914Z] [runtime-status] [13963] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:11:43.916Z] [runtime-status] [13963] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:11:44.049Z] [worker-~diagnostic~-cdb4cf49-9b64-4c2d-a528-2e3f54589dad]: IDLE
+[debug] [2020-01-31T18:11:46.826Z] File /Users/mbp/dev/pixtola/functions/index.js changed, reloading triggers
+[debug] [2020-01-31T18:11:47.826Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T18:11:47.826Z] [worker-~diagnostic~-cdb4cf49-9b64-4c2d-a528-2e3f54589dad]: FINISHING
+[debug] [2020-01-31T18:11:47.826Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T18:11:47.830Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T18:11:47.830Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T18:11:47.831Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T18:11:47.831Z] [worker-~diagnostic~-95cf1650-9350-4e24-ab45-120d16057ae5]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_13965.sock
+[debug] [2020-01-31T18:11:47.831Z] [worker-~diagnostic~-95cf1650-9350-4e24-ab45-120d16057ae5]: BUSY
+[debug] [2020-01-31T18:11:47.832Z] [worker-~diagnostic~-cdb4cf49-9b64-4c2d-a528-2e3f54589dad]: exited
+[debug] [2020-01-31T18:11:47.832Z] [worker-~diagnostic~-cdb4cf49-9b64-4c2d-a528-2e3f54589dad]: FINISHED
+[debug] [2020-01-31T18:11:48.073Z] [runtime-status] [13965] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-01-31T18:11:48.074Z] [runtime-status] [13965] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T18:11:48.077Z] [runtime-status] [13965] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T18:11:48.077Z] [runtime-status] [13965] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:11:48.078Z] [runtime-status] [13965] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:11:48.204Z] [worker-~diagnostic~-95cf1650-9350-4e24-ab45-120d16057ae5]: IDLE
+[debug] [2020-01-31T18:12:38.306Z] File /Users/mbp/dev/pixtola/functions/index.js changed, reloading triggers
+[debug] [2020-01-31T18:12:39.311Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T18:12:39.311Z] [worker-~diagnostic~-95cf1650-9350-4e24-ab45-120d16057ae5]: FINISHING
+[debug] [2020-01-31T18:12:39.311Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T18:12:39.340Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T18:12:39.340Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T18:12:39.340Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T18:12:39.340Z] [worker-~diagnostic~-1d71dcf1-f62f-47ed-a5a4-66e7a9f7c7b1]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_13974.sock
+[debug] [2020-01-31T18:12:39.340Z] [worker-~diagnostic~-1d71dcf1-f62f-47ed-a5a4-66e7a9f7c7b1]: BUSY
+[debug] [2020-01-31T18:12:39.341Z] [worker-~diagnostic~-95cf1650-9350-4e24-ab45-120d16057ae5]: exited
+[debug] [2020-01-31T18:12:39.341Z] [worker-~diagnostic~-95cf1650-9350-4e24-ab45-120d16057ae5]: FINISHED
+[debug] [2020-01-31T18:12:39.568Z] [runtime-status] [13974] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-01-31T18:12:39.569Z] [runtime-status] [13974] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T18:12:39.571Z] [runtime-status] [13974] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T18:12:39.571Z] [runtime-status] [13974] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:12:39.571Z] [runtime-status] [13974] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:12:39.701Z] [worker-~diagnostic~-1d71dcf1-f62f-47ed-a5a4-66e7a9f7c7b1]: IDLE
+[debug] [2020-01-31T18:12:44.274Z] File /Users/mbp/dev/pixtola/functions/index.js changed, reloading triggers
+[debug] [2020-01-31T18:12:45.275Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T18:12:45.275Z] [worker-~diagnostic~-1d71dcf1-f62f-47ed-a5a4-66e7a9f7c7b1]: FINISHING
+[debug] [2020-01-31T18:12:45.275Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T18:12:45.279Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T18:12:45.279Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T18:12:45.279Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T18:12:45.280Z] [worker-~diagnostic~-fd0d0da8-1bac-4999-932c-c9273851687b]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_13976.sock
+[debug] [2020-01-31T18:12:45.280Z] [worker-~diagnostic~-fd0d0da8-1bac-4999-932c-c9273851687b]: BUSY
+[debug] [2020-01-31T18:12:45.282Z] [worker-~diagnostic~-1d71dcf1-f62f-47ed-a5a4-66e7a9f7c7b1]: exited
+[debug] [2020-01-31T18:12:45.282Z] [worker-~diagnostic~-1d71dcf1-f62f-47ed-a5a4-66e7a9f7c7b1]: FINISHED
+[debug] [2020-01-31T18:12:45.518Z] [runtime-status] [13976] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-01-31T18:12:45.520Z] [runtime-status] [13976] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T18:12:45.523Z] [runtime-status] [13976] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T18:12:45.524Z] [runtime-status] [13976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:12:45.525Z] [runtime-status] [13976] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:12:45.651Z] [worker-~diagnostic~-fd0d0da8-1bac-4999-932c-c9273851687b]: IDLE
+[debug] [2020-01-31T18:12:55.101Z] File /Users/mbp/dev/pixtola/functions/index.js changed, reloading triggers
+[debug] [2020-01-31T18:12:56.107Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-01-31T18:12:56.107Z] [worker-~diagnostic~-fd0d0da8-1bac-4999-932c-c9273851687b]: FINISHING
+[debug] [2020-01-31T18:12:56.107Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-01-31T18:12:56.111Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-01-31T18:12:56.111Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-01-31T18:12:56.111Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-01-31T18:12:56.112Z] [worker-~diagnostic~-7d3edd3d-fbda-44c7-802e-ac24cb6c75d5]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_13978.sock
+[debug] [2020-01-31T18:12:56.112Z] [worker-~diagnostic~-7d3edd3d-fbda-44c7-802e-ac24cb6c75d5]: BUSY
+[debug] [2020-01-31T18:12:56.112Z] [worker-~diagnostic~-fd0d0da8-1bac-4999-932c-c9273851687b]: exited
+[debug] [2020-01-31T18:12:56.112Z] [worker-~diagnostic~-fd0d0da8-1bac-4999-932c-c9273851687b]: FINISHED
+[debug] [2020-01-31T18:12:56.397Z] [runtime-status] [13978] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-01-31T18:12:56.399Z] [runtime-status] [13978] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-01-31T18:12:56.401Z] [runtime-status] [13978] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-01-31T18:12:56.402Z] [runtime-status] [13978] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:12:56.402Z] [runtime-status] [13978] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-01-31T18:12:56.551Z] [worker-~diagnostic~-7d3edd3d-fbda-44c7-802e-ac24cb6c75d5]: IDLE

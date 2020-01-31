@@ -1,8 +1,9 @@
+// Requirements
 const functions = require('firebase-functions');
 const express = require('express');
 const engines = require('consolidate');
-const path = require('path');
 const hbs = require('hbs');
+const path = require('path');
 
 // Create Express App
 const app = express();
@@ -17,10 +18,10 @@ app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysi
 
 // Create Routes
 app.get('/', function(req, res, next) {
+	// Cache Policy
 	res.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
-	res.render('index', {
-		// title: ''
-	});
+	// Render Response into the .hbs template
+	res.render('index', {});
 });
 
 // Deploy Express App As A Firebase Cloud Function
