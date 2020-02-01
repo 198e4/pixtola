@@ -1,0 +1,22 @@
+{
+  "short_name": "Portfolio",
+  "name": "Tyler Richardson's Portfolio",
+  "description": "The creative work of Product Designer Tyler Richardson",
+  "icons": [
+    {
+      "src": "/public/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+ },
+    {
+      "src": "/public/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fcf7ec",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#EA3F85"
+}

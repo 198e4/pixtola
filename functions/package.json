@@ -14,6 +14,7 @@
   "dependencies": {
     "consolidate": "^0.15.1",
     "express": "^4.17.1",
+    "express-http-to-https": "^1.1.4",
     "firebase-admin": "^8.6.0",
     "firebase-functions": "^3.3.0",
     "handlebars": "^4.7.2",
@@ -22,7 +23,12 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "firebase-functions-test": "^0.1.6"
+    "firebase-functions-test": "^0.1.6",
+    "grunt": "^1.0.4",
+    "grunt-contrib-htmlmin": "^3.1.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1"
   },
   "private": true
 }
