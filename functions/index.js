@@ -4,6 +4,7 @@ const express = require('express');
 const engines = require('consolidate');
 const hbs = require('hbs');
 const path = require('path');
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
 
 // Create Express App
 const app = express();
@@ -12,6 +13,9 @@ const app = express();
 app.engine('hbs', engines.handlebars);
 app.set('views', './views');
 app.set('view engine', 'hbs');
+
+// Redirect Attempted HTTP Connections to HTTPS
+app.use(redirectToHTTPS([/localhost:(\d{4})/], 301));
 
 // Create Paths to Link Plugins From Front End to Node Modules Directory
 app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysizes')));
