@@ -15,7 +15,7 @@ app.set('views', './views');
 app.set('view engine', 'hbs');
 
 // Redirect Attempted HTTP Connections to HTTPS
-app.use(redirectToHTTPS([/localhost:(\d{4})/], 301));
+// app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
 
 // Create Paths to Link Plugins From Front End to Node Modules Directory
 app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysizes')));
