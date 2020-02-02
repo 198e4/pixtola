@@ -19,11 +19,11 @@
 		// }
 
 		// [MIXIN #03] 1-12 Column Grid with RIGHT Sidebar, (d)(t)(m)--(1-12)c--sb(5-50)
-// @mixin sidebarRight($percentage, $columns, $areas) {
-// 	-ms-grid-columns: (1fr)[$columns] $percentage;
-// 	grid-template-columns: repeat($columns, 1fr) $percentage;
-// 	grid-template-areas: $areas;
-// }
+		// @mixin sidebarRight($percentage, $columns, $areas) {
+		// 	-ms-grid-columns: (1fr)[$columns] $percentage;
+		// 	grid-template-columns: repeat($columns, 1fr) $percentage;
+		// 	grid-template-areas: $areas;
+		// }
 
 	// Type Styles
 
@@ -196,9 +196,9 @@
 			// 	@include grid(2, "col col");
 			// }
 
-			// .d3c {
-			// 	@include grid(3, "col col col");
-			// }
+			.d3c {
+				@include grid(3, "col col col");
+			}
 
 			// .d4c {
 			// 	@include grid(4, "col col col col");
