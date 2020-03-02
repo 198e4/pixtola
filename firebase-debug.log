@@ -1,0 +1,140 @@
+[debug] [2020-03-02T18:21:31.020Z] ----------------------------------------------------------------------
+[debug] [2020-03-02T18:21:31.022Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only hosting,functions
+[debug] [2020-03-02T18:21:31.022Z] CLI Version:   7.12.1
+[debug] [2020-03-02T18:21:31.022Z] Platform:      darwin
+[debug] [2020-03-02T18:21:31.022Z] Node Version:  v10.15.3
+[debug] [2020-03-02T18:21:31.028Z] Time:          Mon Mar 02 2020 10:21:31 GMT-0800 (Pacific Standard Time)
+[debug] [2020-03-02T18:21:31.028Z] ----------------------------------------------------------------------
+[debug] [2020-03-02T18:21:31.028Z] 
+[debug] [2020-03-02T18:21:31.058Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-02T18:21:31.058Z] > authorizing via signed-in user
+[debug] [2020-03-02T18:21:31.058Z] [iam] checking project pixtola-27 for permissions ["firebase.projects.get"]
+[debug] [2020-03-02T18:21:31.059Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-02T18:21:31.060Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-02T18:21:31.213Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T18:21:31.238Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pixtola-27:testIamPermissions  
+
+[debug] [2020-03-02T18:21:31.519Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T18:21:31.520Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pixtola-27  
+ 
+[debug] [2020-03-02T18:21:31.711Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-02T18:21:31.714Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pixtola-27/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2020-03-02T18:21:31.986Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/mbp/dev/pixtola/functions" for Cloud Functions...
+[debug] [2020-03-02T18:21:32.023Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-02T18:21:32.023Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-02T18:21:32.023Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-02T18:21:32.023Z] [worker-~diagnostic~-6d65fa31-6d57-46c1-8017-fe1411b18a6f]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37069.sock
+[debug] [2020-03-02T18:21:32.023Z] [worker-~diagnostic~-6d65fa31-6d57-46c1-8017-fe1411b18a6f]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-03-02T18:21:32.266Z] [runtime-status] [37069] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-03-02T18:21:32.267Z] [runtime-status] [37069] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-02T18:21:32.272Z] [runtime-status] [37069] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-02T18:21:32.275Z] [runtime-status] [37069] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:21:32.275Z] [runtime-status] [37069] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[app]: http function initialized (http://localhost:5001/pixtola-27/us-central1/app).
+[debug] [2020-03-02T18:21:32.595Z] [worker-~diagnostic~-6d65fa31-6d57-46c1-8017-fe1411b18a6f]: IDLE
+[info] [hosting] Rewriting / to http://localhost:5001/pixtola-27/us-central1/app for local Function app
+[debug] [2020-03-02T18:22:07.141Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-02T18:22:07.141Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-02T18:22:07.142Z] Accepted request GET /pixtola-27/us-central1/app/ --> app
+[debug] [2020-03-02T18:22:07.145Z] [worker-pool] addWorker(app)
+[debug] [2020-03-02T18:22:07.145Z] [worker-pool] Adding worker with key app, total=1
+[debug] [2020-03-02T18:22:07.145Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-02T18:22:07.145Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37075.sock
+[debug] [2020-03-02T18:22:07.145Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: BUSY
+[debug] [2020-03-02T18:22:07.388Z] [runtime-status] [37075] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-03-02T18:22:07.390Z] [runtime-status] [37075] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-02T18:22:07.392Z] [runtime-status] [37075] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-02T18:22:07.392Z] [runtime-status] [37075] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:22:07.393Z] [runtime-status] [37075] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:22:07.524Z] [runtime-status] [37075] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-02T18:22:07.524Z] [runtime-status] [37075] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-02T18:22:07.524Z] [runtime-status] [37075] Running app in mode HTTPS
+[debug] [2020-03-02T18:22:07.527Z] [runtime-status] [37075] Attempting to listen to socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37075.sock
+[debug] [2020-03-02T18:22:07.529Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-02T18:22:07.534Z] [runtime-status] [37075] Ephemeral server handling GET request
+[debug] [2020-03-02T18:22:07.537Z] [runtime-status] [37075] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-02T18:22:07.590Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: IDLE
+[debug] [2020-03-02T18:22:07.590Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /javascripts/plugins/lazysizes.min.js to http://localhost:5001/pixtola-27/us-central1/app for local Function app
+[debug] [2020-03-02T18:22:07.693Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-02T18:22:07.693Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-02T18:22:07.694Z] Accepted request GET /pixtola-27/us-central1/app/javascripts/plugins/lazysizes.min.js --> app
+[debug] [2020-03-02T18:22:07.694Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-02T18:22:07.694Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37075.sock
+[debug] [2020-03-02T18:22:07.694Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: BUSY
+[debug] [2020-03-02T18:22:07.696Z] [runtime-status] [37075] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-02T18:22:07.696Z] [runtime-status] [37075] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-02T18:22:07.696Z] [runtime-status] [37075] Running app in mode HTTPS
+[debug] [2020-03-02T18:22:07.697Z] [runtime-status] [37075] Attempting to listen to socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37075.sock
+[debug] [2020-03-02T18:22:07.698Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-02T18:22:07.700Z] [runtime-status] [37075] Ephemeral server handling GET request
+[debug] [2020-03-02T18:22:07.704Z] [runtime-status] [37075] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-02T18:22:07.712Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: IDLE
+[debug] [2020-03-02T18:22:07.712Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] [hosting] Rewriting /favicon.ico to http://localhost:5001/pixtola-27/us-central1/app for local Function app
+[debug] [2020-03-02T18:22:07.919Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-03-02T18:22:07.919Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-03-02T18:22:07.919Z] Accepted request GET /pixtola-27/us-central1/app/favicon.ico --> app
+[debug] [2020-03-02T18:22:07.919Z] [worker-pool] submitWork(triggerId=app)
+[debug] [2020-03-02T18:22:07.919Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37075.sock
+[debug] [2020-03-02T18:22:07.919Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: BUSY
+[debug] [2020-03-02T18:22:07.919Z] [runtime-status] [37075] Trigger "app" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "app"
+[debug] [2020-03-02T18:22:07.920Z] [runtime-status] [37075] triggerDefinition {"httpsTrigger":{},"name":"app","entryPoint":"app"}
+[debug] [2020-03-02T18:22:07.920Z] [runtime-status] [37075] Running app in mode HTTPS
+[debug] [2020-03-02T18:22:07.921Z] [runtime-status] [37075] Attempting to listen to socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37075.sock
+[debug] [2020-03-02T18:22:07.921Z] [functions] Runtime ready! Sending request!
+[debug] [2020-03-02T18:22:07.922Z] [runtime-status] [37075] Ephemeral server handling GET request
+[debug] [2020-03-02T18:22:07.925Z] [runtime-status] [37075] Ephemeral server survived.
+[info] i  functions: Finished "app" in ~1s
+[debug] [2020-03-02T18:22:07.925Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: IDLE
+[debug] [2020-03-02T18:22:07.925Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-03-02T18:23:30.208Z] File /Users/mbp/dev/pixtola/functions/views/dev/index.hbs changed, reloading triggers
+[debug] [2020-03-02T18:23:31.210Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-02T18:23:31.210Z] [worker-~diagnostic~-6d65fa31-6d57-46c1-8017-fe1411b18a6f]: FINISHING
+[debug] [2020-03-02T18:23:31.211Z] [worker-pool] Shutting down IDLE worker (app)
+[debug] [2020-03-02T18:23:31.211Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: FINISHING
+[debug] [2020-03-02T18:23:31.215Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-02T18:23:31.215Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-02T18:23:31.216Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-02T18:23:31.216Z] [worker-~diagnostic~-0dc67376-c2bf-4359-b42f-d4602b5c315a]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37121.sock
+[debug] [2020-03-02T18:23:31.216Z] [worker-~diagnostic~-0dc67376-c2bf-4359-b42f-d4602b5c315a]: BUSY
+[debug] [2020-03-02T18:23:31.218Z] [worker-~diagnostic~-6d65fa31-6d57-46c1-8017-fe1411b18a6f]: exited
+[debug] [2020-03-02T18:23:31.218Z] [worker-~diagnostic~-6d65fa31-6d57-46c1-8017-fe1411b18a6f]: FINISHED
+[debug] [2020-03-02T18:23:31.219Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: exited
+[debug] [2020-03-02T18:23:31.219Z] [worker-app-d0ba2c8c-ad30-4bdf-a414-354ac33984ff]: FINISHED
+[debug] [2020-03-02T18:23:31.457Z] [runtime-status] [37121] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-03-02T18:23:31.459Z] [runtime-status] [37121] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-02T18:23:31.461Z] [runtime-status] [37121] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-02T18:23:31.462Z] [runtime-status] [37121] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:23:31.463Z] [runtime-status] [37121] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:23:31.596Z] [worker-~diagnostic~-0dc67376-c2bf-4359-b42f-d4602b5c315a]: IDLE
+[debug] [2020-03-02T18:27:40.713Z] File /Users/mbp/dev/pixtola/functions/views/dev/index.hbs changed, reloading triggers
+[debug] [2020-03-02T18:27:41.715Z] [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2020-03-02T18:27:41.715Z] [worker-~diagnostic~-0dc67376-c2bf-4359-b42f-d4602b5c315a]: FINISHING
+[debug] [2020-03-02T18:27:41.715Z] [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2020-03-02T18:27:41.715Z] [worker-pool] Cleaned up workers for app: 1 --> 0
+[debug] [2020-03-02T18:27:41.719Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-02T18:27:41.719Z] [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2020-03-02T18:27:41.719Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-02T18:27:41.719Z] [worker-~diagnostic~-ec620789-bdf2-498e-a6ed-cbfdce858dac]: Assigning socketPath: /var/folders/z4/h0_ty2596jx89gccgxryxz880000gn/T/fire_emu_37169.sock
+[debug] [2020-03-02T18:27:41.719Z] [worker-~diagnostic~-ec620789-bdf2-498e-a6ed-cbfdce858dac]: BUSY
+[debug] [2020-03-02T18:27:41.722Z] [worker-~diagnostic~-0dc67376-c2bf-4359-b42f-d4602b5c315a]: exited
+[debug] [2020-03-02T18:27:41.722Z] [worker-~diagnostic~-0dc67376-c2bf-4359-b42f-d4602b5c315a]: FINISHED
+[debug] [2020-03-02T18:27:41.972Z] [runtime-status] [37169] Functions runtime initialized. {"cwd":"/Users/mbp/dev/pixtola/functions","node_version":"10.15.3"}
+[debug] [2020-03-02T18:27:41.974Z] [runtime-status] [37169] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-02T18:27:41.976Z] [runtime-status] [37169] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-03-02T18:27:41.976Z] [runtime-status] [37169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:27:41.978Z] [runtime-status] [37169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/mbp/dev/pixtola/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-03-02T18:27:42.109Z] [worker-~diagnostic~-ec620789-bdf2-498e-a6ed-cbfdce858dac]: IDLE
