@@ -1,0 +1,156 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// SASS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Type Styles
+
+		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900|Playfair+Display|Playfair+Display+SC:900&display=swap');
+
+		// Titles
+		$font-primary: 'Playfair Display SC', serif; // 900 in use
+		$font-secondary: 'Montserrat', sans-serif; // 400, 900 in use
+		// Copy
+		$font-standard: 'Playfair Display', serif; // 400 in use
+
+	// Colors
+
+		// Primary Color, i.e. Brand Colors
+
+			$default: #a7f700;
+			$default-accent: #101112; // 6% Darker
+
+		// Secondary Use Colors
+
+			$success-green: #36F485;
+			$success-green-accent: #16F271; // 7% Darker
+
+			$warning-orange: #FAA434;
+			$warning-orange-accent: #F99513; // 7% Darker
+
+			$error-red: #F44336;
+			$error-red-accent: #F22516; // 9% Darker
+
+		// Blacks & Whites
+
+			$black-100: rgba(3, 11, 8, 1);
+			$black-75: rgba(3, 11, 8, 0.75);
+			$black-50: rgba(3, 11, 8, 0.50);
+			$black-25: rgba(3, 11, 8, 0.25);
+
+			$white-100: rgba(255, 255, 255, 1);
+			$white-75: rgba(255, 255, 255, 0.75);
+			$white-50: rgba(255, 255, 255, 0.50);
+			$white-25: rgba(255, 255, 255, 0.25);
+
+		// Borders
+
+			$bdr: #E3E3E3;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Case Studies Overview Content Container
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Content Controls
+.content-controls {
+	width: 65px;
+	height: auto;
+	position: fixed;
+		bottom: 25px;
+		left: 50px;
+	display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	z-index: 4;
+}
+
+.content-controls.cc-hide {
+	// display: none;
+	opacity: 0;
+}
+
+	.content-controls .cc-button {
+		width: 48px;
+		height: 48px;
+		background: #EA3F85;
+		border-radius: 50%;
+		border: 2px solid #ce1762;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// margin: 12.5px;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	.content-controls .cc-button:first-of-type {
+		margin-bottom: 25px;
+	}
+
+		.cc-button .cc-icon {
+			font-size: 36px;
+			color: $white-100;
+		}
+
+// Container for the Case Studies Overview Content Grid
+.cards.overview-content {
+	position: relative;
+	z-index: 2;
+
+	@media (max-width: 1300px) {
+		grid-row-gap: 0;
+	}
+	@media (max-width: 700px) {
+
+	}
+}
+
+	// Case Studies Cards
+	.cards.overview-content .card {
+		background: $white-100;
+		border-radius: 3px;
+		box-shadow: 0 0 10px 0 #E3E3E3;
+		padding: 0;
+		position: relative;
+		z-index: 3;
+		overflow: hidden;
+		@media (max-width: 1300px) {
+
+		}
+		@media (max-width: 700px) {
+			padding: 0 0 25px 0;
+		}
+	}
+
+		// Case Studies Overview Content Images
+		.cards.overview-content .card img {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid $bdr;
+		}
+
+		// Case Studies Overview Content Title
+		.cards.overview-content .card h3.card-title {
+			padding: 25px 25px 0 25px;
+		}
+
+		// Case Studies Overview Subtitle
+		.cards.overview-content .card h4.card-subtitle {
+			padding: 0 50px 0 50px;
+		}
+
+		// Case Studies Overview Content Copy
+		.cards.overview-content .card ul.card-list {
+			padding: 5px 50px 0 90px;
+		}
+
+		// Case Studies Overview Content Lists
+		.cards.overview-content .card p.card-copy {
+			padding: 0px 50px 0 50px;
+		}
+
+		// Case Studies Overview Tag List
+		.cards.overview-content .card .tags {
+			// margin-top: 15px;
+			padding: 0px 50px 25px 50px;
+		}
