@@ -12,7 +12,8 @@ module.exports = function(grunt) {
 					collapseWhitespace: true
 				},
 				files: {
-					'views/index.hbs': 'views/dev/index.hbs'
+					'views/index.hbs': 'views/dev/index.hbs',
+					'views/case-studies.hbs': 'views/dev/case-studies.hbs'
 				}
 			}
 		},
@@ -24,7 +25,8 @@ module.exports = function(grunt) {
 					trace: true
 				},
 				files: {
-					'../public/stylesheets/css/ui.min.css': '../public/stylesheets/scss/ui.scss'
+					'../public/stylesheets/css/ui.min.css': '../public/stylesheets/scss/ui.scss',
+					'../public/stylesheets/css/case-studies.min.css': '../public/stylesheets/scss/case-studies.scss'
 				}
 			}
 		},

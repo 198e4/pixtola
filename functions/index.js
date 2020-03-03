@@ -35,13 +35,27 @@ app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysi
 // Routes
 /////////////////////////////////////////////////////////////////////////////////////////
 
-	// Home Route
-	app.get('/', function(req, res, next) {
-		// Cache Policy
-		res.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
-		// Render Response into the .hbs template
-		res.render('index', {});
-	});
+// [ROUTE] Home
+// [NAV STRUCTURE] Home
+app.get('/', function(req, res, next) {
+	// Cache Policy
+	res.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
+	// Render Response into the .hbs template
+	res.render('index', {});
+});
 
-// Deploy Express App As A Firebase Cloud Function
+// [ROUTE] Case Study Overview
+// [NAV STRUCTURE] Home > Case Study Overview
+app.get('/case-studies/', function(req, res, next) {
+	// Cache Policy
+	res.set('Cache-Control', 'public, max-age=86400, s-maxage=86400');
+	// Render Response into the .hbs template
+	res.render('case-studies', {});
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// Deploy App to Firebase
+/////////////////////////////////////////////////////////////////////////////////////////
+
+// Deploy Express App as a Firebase Cloud Function
 exports.app = functions.https.onRequest(app);
