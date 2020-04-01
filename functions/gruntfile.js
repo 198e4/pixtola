@@ -13,7 +13,13 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'views/index.hbs': 'views/dev/index.hbs',
-					'views/case-studies.hbs': 'views/dev/case-studies.hbs'
+					'views/case-studies.hbs': 'views/dev/case-studies.hbs',
+					'views/lazyouts.hbs': 'views/dev/case-study/lazyouts.hbs',
+					'views/online-price-book.hbs': 'views/dev/case-study/online-price-book.hbs',
+					'views/quotedcar-dashboard.hbs': 'views/dev/case-study/quotedcar-dashboard.hbs',
+					'views/vehicle-pricing-satellite.hbs': 'views/dev/case-study/vehicle-pricing-satellite.hbs',
+					'views/email-template-generator.hbs': 'views/dev/case-study/email-template-generator.hbs',
+					'views/quotedcar-logo.hbs': 'views/dev/case-study/quotedcar-logo.hbs'
 				}
 			}
 		},
@@ -26,7 +32,8 @@ module.exports = function(grunt) {
 				},
 				files: {
 					'../public/stylesheets/css/ui.min.css': '../public/stylesheets/scss/ui.scss',
-					'../public/stylesheets/css/case-studies.min.css': '../public/stylesheets/scss/case-studies.scss'
+					'../public/stylesheets/css/case-studies.min.css': '../public/stylesheets/scss/case-studies.scss',
+					'../public/stylesheets/css/case-study.min.css': '../public/stylesheets/scss/case-study.scss'
 				}
 			}
 		},

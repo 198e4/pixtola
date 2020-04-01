@@ -33,6 +33,10 @@
 		// Blacks & Whites
 
 			$black-100: rgba(3, 11, 8, 1);
+			$black-95: rgba(3, 11, 8, 0.95);
+			$black-90: rgba(3, 11, 8, 0.90);
+			$black-85: rgba(3, 11, 8, 0.85);
+			$black-80: rgba(3, 11, 8, 0.80);
 			$black-75: rgba(3, 11, 8, 0.75);
 			$black-50: rgba(3, 11, 8, 0.50);
 			$black-25: rgba(3, 11, 8, 0.25);
@@ -56,12 +60,18 @@
 	height: auto;
 	position: fixed;
 		bottom: 25px;
-		left: 50px;
+		right: 25px;
 	display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 	z-index: 4;
+	@media (max-width: 1300px) {
+
+	}
+	@media (max-width: 700px) {
+
+	}
 }
 
 .content-controls.cc-hide {
@@ -81,10 +91,23 @@
 		// margin: 12.5px;
 		padding: 0;
 		cursor: pointer;
+		transition: 250ms;
 	}
 
 	.content-controls .cc-button:first-of-type {
 		margin-bottom: 25px;
+	}
+
+	.content-controls .cc-button:hover {
+		transition: 250ms;
+		box-shadow: 0 0 10px 0 $black-50;
+	}
+
+	.content-controls .cc-button.cc-button-inactive {
+		background: #303136;
+		border-color: #202124;
+		color: #202124;
+		transition: 250ms;
 	}
 
 		.cc-button .cc-icon {
@@ -93,10 +116,21 @@
 		}
 
 // Container for the Case Studies Overview Content Grid
-.cards.overview-content {
+.overview-content-stack,
+.overview-content-stack:hover,
+.overview-content-stack:focus,
+.overview-content-stack:visited {
+	border-bottom: none;
+}
+
+// BG Color Behind Art When in Grid View Only
+.overview-content-grid.cards .overview-content-stack {
+	background: #c6ff0b;
+}
+
+.overview-content-stack {
 	position: relative;
 	z-index: 2;
-
 	@media (max-width: 1300px) {
 		grid-row-gap: 0;
 	}
@@ -105,8 +139,78 @@
 	}
 }
 
-	// Case Studies Cards
-	.cards.overview-content .card {
+	// Card Overlay When in Grid Mode
+
+	// Hide Overlay When in the Stacked Card View Mode
+	.overview-content-grid > .overview-content-stack.cards > .card--overlay {
+		display: none;
+	}
+
+	// Case Study Card Overlay (When in Grid View and On Hover Only)
+	.overview-content-grid.cards > .overview-content-stack > .card--overlay {
+		opacity: 0;
+		background: $black-90;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		z-index: 4;
+		transition: 250ms;
+		@media (max-width: 1300px) {
+
+		}
+		@media (max-width: 700px) {
+
+		}
+	}
+
+	.overview-content-grid.cards > .overview-content-stack > .card--overlay:hover {
+		opacity: 1;
+		transition: 250ms;
+		@media (max-width: 1300px) {
+
+		}
+		@media (max-width: 700px) {
+
+		}
+	}
+
+		.overview-content-grid.cards .card--overlay > .card-title {
+			color: $white-100;
+			font-size: 27px;
+			letter-spacing: -0.85px;
+			line-height: 35px;
+			text-align: center;
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+		.overview-content-grid.cards .card--overlay > .material-icons {
+			color: $white-100;
+			font-size: 36px;
+			position: absolute;
+				bottom: 25px;
+				right: 25px;
+			z-index: 5;
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+	// Case Studies Card
+	.overview-content-stack .card {
 		background: $white-100;
 		border-radius: 3px;
 		box-shadow: 0 0 10px 0 #E3E3E3;
@@ -123,34 +227,34 @@
 	}
 
 		// Case Studies Overview Content Images
-		.cards.overview-content .card img {
+		.overview-content-stack .card img {
 			margin: 0;
 			padding: 0;
 			border-bottom: 1px solid $bdr;
 		}
 
 		// Case Studies Overview Content Title
-		.cards.overview-content .card h3.card-title {
+		.overview-content-stack .card h3.card-title {
 			padding: 25px 25px 0 25px;
 		}
 
 		// Case Studies Overview Subtitle
-		.cards.overview-content .card h4.card-subtitle {
+		.overview-content-stack .card h4.card-subtitle {
 			padding: 0 50px 0 50px;
 		}
 
 		// Case Studies Overview Content Copy
-		.cards.overview-content .card ul.card-list {
+		.overview-content-stack .card ul.card-list {
 			padding: 5px 50px 0 90px;
 		}
 
 		// Case Studies Overview Content Lists
-		.cards.overview-content .card p.card-copy {
+		.overview-content-stack .card p.card-copy {
 			padding: 0px 50px 0 50px;
 		}
 
 		// Case Studies Overview Tag List
-		.cards.overview-content .card .tags {
+		.overview-content-stack .card .tags {
 			// margin-top: 15px;
 			padding: 0px 50px 25px 50px;
 		}

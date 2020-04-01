@@ -1,0 +1,154 @@
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// SASS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Type Styles
+
+		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900|Playfair+Display|Playfair+Display+SC:900&display=swap');
+
+		// Titles
+		$font-primary: 'Playfair Display SC', serif; // 900 in use
+		$font-secondary: 'Montserrat', sans-serif; // 400, 900 in use
+		// Copy
+		$font-standard: 'Playfair Display', serif; // 400 in use
+
+	// Colors
+
+		// Primary Color, i.e. Brand Colors
+
+			$default: #a7f700;
+			$default-accent: #101112; // 6% Darker
+
+		// Secondary Use Colors
+
+			$success-green: #36F485;
+			$success-green-accent: #16F271; // 7% Darker
+
+			$warning-orange: #FAA434;
+			$warning-orange-accent: #F99513; // 7% Darker
+
+			$error-red: #F44336;
+			$error-red-accent: #F22516; // 9% Darker
+
+		// Blacks & Whites
+
+			$black-100: rgba(3, 11, 8, 1);
+			$black-95: rgba(3, 11, 8, 0.95);
+			$black-90: rgba(3, 11, 8, 0.90);
+			$black-85: rgba(3, 11, 8, 0.85);
+			$black-80: rgba(3, 11, 8, 0.80);
+			$black-75: rgba(3, 11, 8, 0.75);
+			$black-50: rgba(3, 11, 8, 0.50);
+			$black-25: rgba(3, 11, 8, 0.25);
+
+			$white-100: rgba(255, 255, 255, 1);
+			$white-75: rgba(255, 255, 255, 0.75);
+			$white-50: rgba(255, 255, 255, 0.50);
+			$white-25: rgba(255, 255, 255, 0.25);
+
+		// Borders
+
+			$bdr: #E3E3E3;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Case Study Content Container
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Primary Content Container for the Case Study View
+.case-study__content {
+	@media (max-width: 1300px) {
+
+	}
+	@media (max-width: 700px) {
+
+	}
+}
+
+	// Cards Within the Case Study's Content Area
+	.case-study__content > .card {
+		@media (max-width: 1300px) {
+
+		}
+		@media (max-width: 700px) {
+
+		}
+	}
+
+		// Card Titles
+		.case-study__content > .card .card-title {
+			margin-bottom: 25px;
+			text-align: left;
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+		// Card Sub Titles
+		.case-study__content > .card .card-subtitle {
+
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+		// Card Copy
+		.case-study__content > .card .card-copy {
+
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+		// Card List
+		.case-study__content > .card ul.card-list {
+
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+		// Project Role List
+		.case-study__content > .card ul.card-list.role-list {
+			list-style-type: none;
+			padding-left: 0;
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
+
+			.case-study__content > .card ul.card-list.role-list li {
+				font-style: italic;
+				@media (max-width: 1300px) {
+
+				}
+				@media (max-width: 700px) {
+
+				}
+			}
+
+		// Client Brand Mark
+		.case-study__content > .card .client-brand {
+			width: 200px;
+			padding: 25px 0;
+			@media (max-width: 1300px) {
+
+			}
+			@media (max-width: 700px) {
+
+			}
+		}

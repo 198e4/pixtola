@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>https://pixtola.com</loc>
-		<lastmod>2020-03-02</lastmod>
+		<lastmod>2020-04-01</lastmod>
 	</url>
-	<url>
-		<loc>https://pixtola.com/case-studies/</loc>
-		<lastmod>2020-03-02</lastmod>
-	</url>
+		<url>
+			<loc>https://pixtola.com/case-studies/</loc>
+			<lastmod>2020-04-01</lastmod>
+		</url>
+			<url>
+				<loc>https://pixtola.com/case-studies/lazyouts/</loc>
+				<lastmod>2020-04-01</lastmod>
+			</url>
+			<url>
+				<loc>https://pixtola.com/case-studies/online-price-book/</loc>
+				<lastmod>2020-04-01</lastmod>
+			</url>
+			<url>
+				<loc>https://pixtola.com/case-studies/quotedcar-dashboard/</loc>
+				<lastmod>2020-04-01</lastmod>
+			</url>
+			<url>
+				<loc>https://pixtola.com/case-studies/vehicle-pricing-satellite/</loc>
+				<lastmod>2020-04-01</lastmod>
+			</url>
+			<url>
+				<loc>https://pixtola.com/case-studies/email-template-generator/</loc>
+				<lastmod>2020-04-01</lastmod>
+			</url>
+			<url>
+				<loc>https://pixtola.com/case-studies/quotedcar-logo-design/</loc>
+				<lastmod>2020-04-01</lastmod>
+			</url>
 </urlset>
