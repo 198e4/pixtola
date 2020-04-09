@@ -50,6 +50,138 @@
 
 			$bdr: #E3E3E3;
 
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			// Typography
+			/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+					// Titles
+					.case-study__content .title {
+						color: $black-100;
+						font-size: 27px;
+						letter-spacing: -0.85px;
+						line-height: 35px;
+						text-align: left;
+						// padding: 25px 50px 0 50px;
+						padding: 0 50px 0 50px;
+						margin-bottom: 25px;
+						@media (max-width: 1300px) {
+
+						}
+						@media (max-width: 700px) {
+
+						}
+					}
+
+						.title--stat {
+
+							@media (max-width: 1300px) {
+
+							}
+							@media (max-width: 700px) {
+
+							}
+						}
+
+					// Sub Titles
+					.subtitle {
+						font-family:  $font-primary;
+						color: $black-100;
+						font-size: 18px;
+						font-weight: 900;
+						letter-spacing: -0.85px;
+						line-height: 26px;
+						text-align: left;
+						padding: 0 50px 0 50px;
+						@media (max-width: 1300px) {
+
+						}
+						@media (max-width: 700px) {
+
+						}
+					}
+
+						// Copy
+						.copy {
+							// padding: 10px 50px 15px 50px;
+							padding: 0 50px 0 50px;
+							// margin-top: 15px;
+							// margin-bottom: 25px;
+							@media (max-width: 1300px) {
+
+							}
+							@media (max-width: 700px) {
+
+							}
+						}
+
+						.copy--stat {
+
+							@media (max-width: 1300px) {
+
+							}
+							@media (max-width: 700px) {
+
+							}
+						}
+
+					// List
+					ul.list {
+
+						@media (max-width: 1300px) {
+
+						}
+						@media (max-width: 700px) {
+
+						}
+					}
+
+						// List / Project Role List
+						ul.list.role-list {
+							list-style-type: none;
+							padding: 20px 50px 25px 50px;
+							@media (max-width: 1300px) {
+
+							}
+							@media (max-width: 700px) {
+
+							}
+						}
+
+							ul.list.role-list li {
+								font-style: italic;
+								padding-bottom: 15px;
+								@media (max-width: 1300px) {
+
+								}
+								@media (max-width: 700px) {
+
+								}
+							}
+
+					// Client Brand Mark
+					.client-brand {
+						width: 225px;
+						padding: 20px 50px 35px 50px;
+						@media (max-width: 1300px) {
+
+						}
+						@media (max-width: 700px) {
+
+						}
+					}
+
+					// Skill Tags
+					.card .tags {
+						margin: 0;
+						padding: 20px 50px 25px 50px;
+						@media (max-width: 1300px) {
+
+						}
+						@media (max-width: 700px) {
+
+						}
+					}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Case Study Content Container
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -60,79 +192,150 @@
 
 	}
 	@media (max-width: 700px) {
-
+		padding: 0;
 	}
 }
 
-	// Cards Within the Case Study's Content Area
-	.case-study__content > .card {
+	.case-study__content.content--overview {
 		@media (max-width: 1300px) {
-
+			padding-top: 0;
 		}
 		@media (max-width: 700px) {
 
 		}
 	}
 
-		// Card Titles
-		.case-study__content > .card .card-title {
-			margin-bottom: 25px;
-			text-align: left;
-			@media (max-width: 1300px) {
+	// Cards Within the Case Study's Content Area
+	.case-study__content > .card {
+		background: $white-100;
+		box-shadow: 0 0 10px 0 #E3E3E3;
+		border-radius: 3px;
+		padding-top: 45px;
+		padding-bottom: 15px;
+		@media (max-width: 1300px) {
 
+		}
+		@media (max-width: 700px) {
+			box-shadow: none;
+		}
+	}
+
+		.case-study__content > .card.card--flex {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			flex-direction: row;
+			@media (max-width: 1300px) {
+				flex-direction: column;
 			}
 			@media (max-width: 700px) {
 
 			}
 		}
 
-		// Card Sub Titles
-		.case-study__content > .card .card-subtitle {
-
+		// Card Column / 75%
+		.case-study__content > .card.card--flex > .card__col--75 {
+			flex-grow: 1;
+			flex-basis: 75%;
 			@media (max-width: 1300px) {
-
+				flex-basis: 50%;
 			}
 			@media (max-width: 700px) {
 
 			}
 		}
 
-		// Card Copy
-		.case-study__content > .card .card-copy {
-
+		// Card Column / 25%
+		.case-study__content > .card.card--flex > .card__col--25 {
+			flex-grow: 1;
+			flex-basis: 25%;
+			padding-top: 60px;
 			@media (max-width: 1300px) {
-
+				padding-top: 10px;
+				flex-basis: 50%;
 			}
 			@media (max-width: 700px) {
 
 			}
 		}
 
-		// Card List
-		.case-study__content > .card ul.card-list {
+			// Type Alignment Modifier
+			.card__col--25 > .subtitle,
+			.card__col--25 > .copy,
+			.card__col--25 > .client-brand,
+			.card__col--25 > ul.list.role-list,
+			.card__col--25 > .tags {
+				padding-left: 0;
+				@media (max-width: 1300px) {
+					padding-left: 50px;
+				}
+				@media (max-width: 700px) {
 
-			@media (max-width: 1300px) {
-
+				}
 			}
-			@media (max-width: 700px) {
 
-			}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Problem & Solution Stripe Container
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	.stripe {
+		width: 100%;
+		height: auto;
+		padding: 50px 25px 50px 25px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: center;
+		@media (max-width: 1300px) {
+			flex-direction: column;
+			align-items: center;
 		}
-
-		// Project Role List
-		.case-study__content > .card ul.card-list.role-list {
-			list-style-type: none;
+		@media (max-width: 700px) {
 			padding-left: 0;
-			@media (max-width: 1300px) {
+			padding-right: 0;
+		}
+	}
 
+		.stripe.black {
+			background: $black-100;
+		}
+
+		.stripe.green {
+			background: #04D786; // Original Green
+			// background: #ADFA2C;
+		}
+
+		.stripe_copy-container {
+			flex-grow: 1;
+			flex-basis: 50%;
+			@media (max-width: 1300px) {
+				flex-basis: 100%;
+				margin-bottom: 25px;
 			}
 			@media (max-width: 700px) {
 
 			}
 		}
 
-			.case-study__content > .card ul.card-list.role-list li {
-				font-style: italic;
+			.stripe.black .stripe_copy-container .title,
+			.stripe.black .stripe_copy-container .subtitle,
+			.stripe.black .stripe_copy-container .copy,
+			.stripe.black .stripe_stat-container .title--stat,
+			.stripe.black .stripe_stat-container .copy--stat {
+				color: $white-100;
+			}
+
+			.stripe.green .stripe_copy-container .title,
+			.stripe.green .stripe_copy-container .subtitle,
+			.stripe.green .stripe_copy-container .copy,
+			.stripe.green .stripe_stat-container .title--stat,
+			.stripe.green .stripe_stat-container .copy--stat {
+				color: $black-100;
+			}
+
+			.stripe_copy-container .title {
+				flex-grow: 1;
 				@media (max-width: 1300px) {
 
 				}
@@ -141,14 +344,69 @@
 				}
 			}
 
-		// Client Brand Mark
-		.case-study__content > .card .client-brand {
-			width: 200px;
-			padding: 25px 0;
-			@media (max-width: 1300px) {
+			.stripe_copy-container .subtitle {
+				flex-grow: 1;
+				@media (max-width: 1300px) {
 
+				}
+				@media (max-width: 700px) {
+
+				}
+			}
+
+		.stripe_stat-container {
+			flex-grow: 1;
+			flex-basis: 25%;
+			@media (max-width: 1300px) {
+				margin-bottom: 25px;
 			}
 			@media (max-width: 700px) {
 
 			}
 		}
+
+			.stripe_stat-container .title--stat {
+				font-family: $font-secondary;
+				font-size: 70px;
+				letter-spacing: 0;
+				padding-right: 25px;
+				@media (max-width: 1300px) {
+					text-align: center;
+					padding: 0 50px;
+				}
+				@media (max-width: 700px) {
+
+				}
+			}
+
+				.stripe.black .stripe_stat-container .title--stat {
+					color: #04D786;
+					@media (max-width: 1300px) {
+
+					}
+					@media (max-width: 700px) {
+
+					}
+				}
+
+				.stripe.green .stripe_stat-container .title--stat {
+					// color: #2C60FA;
+					@media (max-width: 1300px) {
+
+					}
+					@media (max-width: 700px) {
+
+					}
+				}
+
+			.stripe_stat-container .copy--stat {
+				font-style: italic;
+				padding-right: 50px;
+				@media (max-width: 1300px) {
+					text-align: center;
+					padding: 0 25px;
+				}
+				@media (max-width: 700px) {
+					padding: 0 50px;
+				}
+			}
