@@ -770,6 +770,9 @@ h1.hero-title > .char16 {
   overflow-y: auto;
   width: 100%;
   height: 100%; }
+  @media (max-width: 1300px) {
+    .modal {
+      padding: 0 25px; } }
 
 .modal.modal--show {
   display: flex; }
@@ -786,6 +789,9 @@ h1.hero-title > .char16 {
   position: relative;
   z-index: 1001;
   padding-bottom: 50px; }
+  @media (max-width: 1300px) {
+    .modal > .modal_card {
+      width: 100%; } }
 
 .modal_type > .title {
   font-family: "Playfair Display SC", serif;
