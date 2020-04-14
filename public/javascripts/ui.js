@@ -174,10 +174,11 @@
 		// Load the image into the modal before the user selects it using the thumbnail
 		$(document).on('mouseover', '.modal_trigger--open', function() {
 
-			// Get the image's path, alt attribute, and data-description attribute from the image thumbnail
+			// Get the image's path, alt attribute, data-description, and data-hex attribute from the image thumbnail
 			var imgPath = $(this).attr('src');
 			var imgTitle = $(this).attr('alt');
 			var imgDescription = $(this).attr('data-description');
+			var imgHexColor = $(this).attr('data-hex');
 
 			// Add the image path to the modal's empty placeholder
 			$('.modal_card > .modal_img').attr('src', imgPath).attr('alt', imgTitle);
@@ -185,6 +186,8 @@
 			$('.modal_type > .title').text(imgTitle);
 			// Add the image description to the modal's empty placeholder
 			$('.modal_type > .copy').text(imgDescription);
+			// Use the image's dominant hex color as the modal background color
+			$('.modal > .modal_bg').css('background', imgHexColor);
 
 		});
 
@@ -205,4 +208,30 @@
 
 	}
 	modal();
+	////////////////////////////////////////////
+	// Note: Images should have the .color class and the data-hex="" attribute
+	function extractColors() {
+		$('img.color').each(function() {
+			// This image
+			var $thisImage = $(this);
+			// This image's Path
+			var imgPath = $thisImage.attr('src');
+			// Get the dominant color using node-vibrant
+				// node-vibrant Configuration
+				var vibrantConfig = {
+					colorCount: 3
+				};
+				// Instantiate node-vibrant
+				var v = new Vibrant(imgPath, vibrantConfig);
+				// Resolve the Promise from node-vibrant and get the hex value for this image
+				var colorPalette = v.getPalette()
+								.then(function(value) {
+									// The images most dominant hex color, [NOTE FOR THE FUTURE] the "value" object contains much more color options ()
+									var hexColor = value.Vibrant.hex;
+									// Set the image's hex attribute with it's dominant hex color
+									$thisImage.attr('data-hex', hexColor);
+								});
+		});
+	}
+	extractColors();
 });

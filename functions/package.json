@@ -21,6 +21,7 @@
     "hbs": "^4.1.1",
     "jquery": "^3.5.0",
     "lazysizes": "^5.2.0",
+    "node-vibrant": "^3.1.5",
     "path": "^0.12.7"
   },
   "devDependencies": {
