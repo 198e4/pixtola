@@ -29,7 +29,12 @@ app.set('view engine', 'hbs');
 /////////////////////////////////////////////////////////////////////////////////////////
 
 // Create Paths to Link Plugins From Front End to Node Modules Directory
-app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysizes')));
+	// jQuery
+	app.use('/javascripts/plugins', express.static(path.join('node_modules', 'jquery', 'dist')));
+	// Lazy Slides (Used to lazyload images)
+	app.use('/javascripts/plugins', express.static(path.join('node_modules', 'lazysizes')));
+	// SVG.JS (Used to draw SVG shapes)
+	app.use('/javascripts/plugins', express.static(path.join('node_modules', '@svgdotjs', 'svg.js', 'dist')));
 
 /////////////////////////////////////////////////////////////////////////////////////////
 // Routes
