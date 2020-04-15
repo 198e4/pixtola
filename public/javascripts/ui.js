@@ -171,38 +171,38 @@
 	// Dependencies: jquery
 	////////////////////////////////////////////////
 	function modal() {
-		// Load the image into the modal before the user selects it using the thumbnail
-		$(document).on('mouseover', '.modal_trigger--open', function() {
-
+		function populateModal(thumbnail) {
 			// Get the image's path, alt attribute, data-description, and data-hex attribute from the image thumbnail
-			var imgPath = $(this).attr('src');
-			var imgTitle = $(this).attr('alt');
-			var imgDescription = $(this).attr('data-description');
-			var imgBGHexColor = $(this).attr('data-hex-bg');
-			var imgAccentBGHexColor = $(this).attr('data-hex-accent-bg');
-			var imgAccentBorderHexColor = $(this).attr('data-hex-accent-border');
-
+			var imgPath = thumbnail.attr('src');
+			var imgTitle = thumbnail.attr('alt');
+			var imgDescription = thumbnail.attr('data-description');
+			var imgBGHexColor = thumbnail.attr('data-hex-bg');
+			var imgAccentBGHexColor = thumbnail.attr('data-hex-accent-bg');
+			var imgAccentBorderHexColor = thumbnail.attr('data-hex-accent-border');
 			// Add the image path to the modal's empty placeholder
 			$('.modal_card > .modal_img').attr('src', imgPath).attr('alt', imgTitle);
 			// Add the image title to the modal's empty placeholder
 			$('.modal_type > .title').text(imgTitle);
 			// Add the image description to the modal's empty placeholder
 			$('.modal_type > .copy').text(imgDescription);
-			// Use the image's dominant hex color as the modal background color
+			// Update the modal's CSS with colors programatically pulled from the image itself
 			$('.modal > .modal_bg').css('background', imgBGHexColor);
-			//
 			$('.modal > .modal_close').css('background', imgAccentBGHexColor);
-			//
 			$('.modal > .modal_close').css('border-color', imgAccentBorderHexColor);
 			$('.modal_close > .material-icons').css('color', imgAccentBorderHexColor);
+		}
+		// Load the image into the modal before the user selects it using the thumbnail
+		$(document).on('mouseover', '.modal_trigger--open', function() {
+			// Populate the modal with the content from the thumbnail image's attributes
+			populateModal($(this));
 		});
-
 		// Open the modal
 		$(document).on('click', '.modal_trigger--open', function() {
+			// Populate the modal with the content from the thumbnail image's attributes
+			populateModal($(this));
 			// Show the modal and the modal's background
 			$('.modal_bg, .modal').removeClass('modal--hide').addClass('modal--show');
 		});
-
 		// Close the modal
 		$(document).on('click', '.modal_trigger--close', function() {
 			// Hide the modal and the modal's background
@@ -211,7 +211,6 @@
 			$('.modal_card > .modal_img').attr('src', '').attr('alt', '');
 			$('.modal_type > .title, .modal_type > .copy').text('');
 		});
-
 	}
 	modal();
 	////////////////////////////////////////////////
@@ -236,19 +235,17 @@
 				// Resolve the Promise from node-vibrant and get the hex value for this image
 				var colorPalette = v.getPalette()
 								.then(function(value) {
-									console.log(value);
-									// The images most dominant hex color, [NOTE FOR THE FUTURE] the "value" object contains much more color options ()
+									// console.log(value); // The "value" object contains all of the color options
+									// Get the colors needed from the "value" object
 									var hexColor = value.Vibrant.hex;
-									//
 									var hexAccentBG = value.LightVibrant.hex;
-									//
 									var hexAccentBorder = value.LightMuted.hex;
-									// Set the image's hex attribute with it's dominant hex color
+									// Add the images colors to data attributes on each <img> tag
 									$thisImage.attr('data-hex-bg', hexColor);
-									//
 									$thisImage.attr('data-hex-accent-bg', hexAccentBG);
-									//
 									$thisImage.attr('data-hex-accent-border', hexAccentBorder);
+									//
+									$thisImage.css('border-color', hexAccentBG);
 								});
 		});
 	}
