@@ -1497,11 +1497,90 @@
 
 .modal.modal--show {
 	display: flex;
+	-webkit-animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+	@-webkit-keyframes scale-in-center {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+			opacity: 1;
+		}
+		100% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+	@keyframes scale-in-center {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+			opacity: 1;
+		}
+		100% {
+			-webkit-transform: scale(1);
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
 
 .modal.modal--hide {
 	display: none;
 }
+
+	// Modal Close Button
+
+	.modal > .modal_close {
+		width: 48px;
+		height: 48px;
+		background: $white-100;
+		border-radius: 50%;
+		border: 2px solid #e3e3e3;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		position: fixed;
+			top: 25px;
+			right: 25px;
+		z-index: 1002;
+		transition: 250ms;
+		cursor: pointer;
+		@media (max-width: 1300px) {
+			width: 36px;
+			height: 36px;
+			top: 7px;
+			right: 7px;
+		}
+		@media (max-width: 700px) {
+
+		}
+	}
+
+	.modal > .modal_close:hover {
+		box-shadow: 0 0 10px 0 #030b0850;
+		transition: 450ms;
+		@media (max-width: 1300px) {
+
+		}
+		@media (max-width: 700px) {
+
+		}
+	}
+
+		.modal_close > .material-icons {
+			font-size: 36px;
+			color: #030b08;
+			@media (max-width: 1300px) {
+				font-size: 24px;
+			}
+			@media (max-width: 700px) {
+
+			}
+		}
 
 	// Modal Card
 	.modal > .modal_card {

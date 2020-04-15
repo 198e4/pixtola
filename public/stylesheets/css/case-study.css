@@ -37,20 +37,26 @@ ul.list.role-list li {
   margin: 0;
   padding: 20px 50px 25px 50px; }
 
-@media (max-width: 700px) {
-  .case-study__content {
-    padding: 0; } }
+.case-study__content {
+  justify-items: center; }
+  @media (max-width: 700px) {
+    .case-study__content {
+      padding: 0; } }
 
 @media (max-width: 1300px) {
   .case-study__content.content--overview {
     padding-top: 0; } }
 
 .case-study__content > .card {
+  width: 800px;
   background: white;
   box-shadow: 0 0 10px 0 #E3E3E3;
   border-radius: 3px;
   padding-top: 45px;
   padding-bottom: 25px; }
+  @media (max-width: 1300px) {
+    .case-study__content > .card {
+      width: auto; } }
   @media (max-width: 700px) {
     .case-study__content > .card {
       box-shadow: none; } }
@@ -168,7 +174,7 @@ ul.list.role-list li {
 
 .timeline--img-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-row-gap: 25px;
   grid-column-gap: 25px;
   margin: 0 0 50px 0;

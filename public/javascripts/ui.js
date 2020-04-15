@@ -99,7 +99,7 @@
 	function drawTimelineSVG() {
 
 		// Get the SVG Parent container height, used for the SVG Container's Overall Height
-		var containerHeight = $('.timeline-content').height() - 105;
+		var containerHeight = $('.timeline-content').height(); // 105, 77
 
 		// Get the starting and ending coordinates for the timeline
 		var lineStart = $('.interval').first().position().top + 1;
@@ -178,7 +178,9 @@
 			var imgPath = $(this).attr('src');
 			var imgTitle = $(this).attr('alt');
 			var imgDescription = $(this).attr('data-description');
-			var imgHexColor = $(this).attr('data-hex');
+			var imgBGHexColor = $(this).attr('data-hex-bg');
+			var imgAccentBGHexColor = $(this).attr('data-hex-accent-bg');
+			var imgAccentBorderHexColor = $(this).attr('data-hex-accent-border');
 
 			// Add the image path to the modal's empty placeholder
 			$('.modal_card > .modal_img').attr('src', imgPath).attr('alt', imgTitle);
@@ -187,8 +189,12 @@
 			// Add the image description to the modal's empty placeholder
 			$('.modal_type > .copy').text(imgDescription);
 			// Use the image's dominant hex color as the modal background color
-			$('.modal > .modal_bg').css('background', imgHexColor);
-
+			$('.modal > .modal_bg').css('background', imgBGHexColor);
+			//
+			$('.modal > .modal_close').css('background', imgAccentBGHexColor);
+			//
+			$('.modal > .modal_close').css('border-color', imgAccentBorderHexColor);
+			$('.modal_close > .material-icons').css('color', imgAccentBorderHexColor);
 		});
 
 		// Open the modal
@@ -208,8 +214,12 @@
 
 	}
 	modal();
-	////////////////////////////////////////////
-	// Note: Images should have the .color class and the data-hex="" attribute
+	////////////////////////////////////////////////
+	// Purpose: Modal
+	// View: Case Study View
+	// Dependencies: jquery, node-vibrant
+	// Notes: Images should have the .color class and the data-hex="" attribute
+	////////////////////////////////////////////////
 	function extractColors() {
 		$('img.color').each(function() {
 			// This image
@@ -226,10 +236,19 @@
 				// Resolve the Promise from node-vibrant and get the hex value for this image
 				var colorPalette = v.getPalette()
 								.then(function(value) {
+									console.log(value);
 									// The images most dominant hex color, [NOTE FOR THE FUTURE] the "value" object contains much more color options ()
 									var hexColor = value.Vibrant.hex;
+									//
+									var hexAccentBG = value.LightVibrant.hex;
+									//
+									var hexAccentBorder = value.LightMuted.hex;
 									// Set the image's hex attribute with it's dominant hex color
-									$thisImage.attr('data-hex', hexColor);
+									$thisImage.attr('data-hex-bg', hexColor);
+									//
+									$thisImage.attr('data-hex-accent-bg', hexAccentBG);
+									//
+									$thisImage.attr('data-hex-accent-border', hexAccentBorder);
 								});
 		});
 	}
