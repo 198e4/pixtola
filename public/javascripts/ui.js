@@ -245,7 +245,7 @@
 									$thisImage.attr('data-hex-accent-bg', hexAccentBG);
 									$thisImage.attr('data-hex-accent-border', hexAccentBorder);
 									//
-									$thisImage.css('border-color', hexAccentBG);
+									// $thisImage.css('border-color', hexAccentBG);
 								});
 		});
 	}

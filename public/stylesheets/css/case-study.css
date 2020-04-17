@@ -206,7 +206,6 @@ ul.list.role-list li {
 
 .timeline--img-row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
   grid-row-gap: 25px;
   grid-column-gap: 25px;
   margin: 0 0 50px 0;
@@ -214,6 +213,24 @@ ul.list.role-list li {
   @media (max-width: 700px) {
     .timeline--img-row {
       grid-template-columns: repeat(1, 1fr); } }
+
+.timeline--img-row.grid_1 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.timeline--img-row.grid_2 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.timeline--img-row.grid_3 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.timeline--img-row.grid_4 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.timeline--img-row.grid_5 {
+  grid-template-columns: repeat(5, 1fr); }
+
+.timeline--img-row.grid_6 {
+  grid-template-columns: repeat(6, 1fr); }
 
 .timeline--img-row > .timeline--img-row__img {
   width: 100%;
