@@ -4,13 +4,15 @@
 
 	// Type Styles
 
-		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900|Playfair+Display|Playfair+Display+SC:900&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,900|Source+Code+Pro:400|Playfair+Display|Playfair+Display+SC:900&display=swap');
 
 		// Titles
 		$font-primary: 'Playfair Display SC', serif; // 900 in use
 		$font-secondary: 'Montserrat', sans-serif; // 400, 900 in use
 		// Copy
 		$font-standard: 'Playfair Display', serif; // 400 in use
+		// Code Samples
+		$font-code: 'Source Code Pro', monospace; // 600 in use
 
 	// Colors
 
@@ -125,8 +127,17 @@
 						}
 
 					// List
-					ul.list {
-
+					ul.list,
+					ol.list {
+						font-family: $font-standard;
+						color: $black-100;
+						font-size: 18px;
+						letter-spacing: 0.2px;
+						line-height: 30px;
+						font-weight: 400;
+						text-align: left;
+						margin: 15px 0 25px 0;
+						padding: 5px 50px 0 90px;
 						@media (max-width: 1300px) {
 
 						}
@@ -135,10 +146,23 @@
 						}
 					}
 
+					ul.list.timeline-card,
+					ol.list.timeline-card {
+						margin-top: 0;
+						padding: 0 50px 0 50px;
+					}
+
+					// .copy + ul.list.timeline-card,
+					// .copy + ol.list.timeline-card {
+					// 	margin-top: -15px;
+					// 	padding: 0 50px 0 50px;
+					// }
+
 						// List / Project Role List
-						ul.list.role-list {
-							list-style-type: none;
-							padding: 20px 50px 25px 50px;
+						ul.list li,
+						ol.list li {
+							margin: 0;
+							padding: 0 0 10px 0;
 							@media (max-width: 1300px) {
 
 							}
@@ -146,17 +170,6 @@
 
 							}
 						}
-
-							ul.list.role-list li {
-								font-family: $font-secondary;
-								padding-bottom: 15px;
-								@media (max-width: 1300px) {
-
-								}
-								@media (max-width: 700px) {
-
-								}
-							}
 
 					// Client Brand Mark
 					.client-brand {
@@ -457,7 +470,7 @@
 						}
 
 						.interval > .copy {
-							padding: 0;
+							padding: 0 0 15px 0;
 							margin: 0;
 							@media (max-width: 1300px) {
 
@@ -484,7 +497,7 @@
 
 						.subinterval > .copy {
 							padding: 0 0 0 0;
-							margin: 0;
+							// margin: 0;
 							@media (max-width: 1300px) {
 								// padding-left: 0;
 							}
@@ -706,6 +719,55 @@
 					padding: 0 50px;
 				}
 			}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Code Examples
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.code {
+	width: 100%;
+	height: auto;
+	background: $black-100;
+	margin-bottom: 25px;
+	padding: 25px 50px 25px 50px;
+	border-radius: 2px;
+	@media (max-width: 1300px) {
+
+	}
+	@media (max-width: 700px) {
+		padding: 5px 25px 15px 25px;
+		margin-left: -50px;
+		margin-right: -50px;
+		width: calc(100% + 100px);
+	}
+}
+
+	.block {
+		color: #04D786;
+		font-family: $font-code;
+		text-align: left;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 400;
+		@media (max-width: 1300px) {
+
+		}
+		@media (max-width: 700px) {
+			font-size: 10px;
+		}
+	}
+
+	.block > .blue {
+		color: #5CCDFA;
+	}
+
+	.block > .white {
+		color: $white-100;
+	}
+
+	.block > .pink {
+		color: #EA3F85;
+	}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Case Studies Pager Nav Above the Case Study Page Footer

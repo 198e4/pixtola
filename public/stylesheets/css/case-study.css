@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900|Playfair+Display|Playfair+Display+SC:900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900|Source+Code+Pro:400|Playfair+Display|Playfair+Display+SC:900&display=swap");
 .case-study__content .title {
   color: #030b08;
   font-size: 27px;
@@ -21,13 +21,27 @@
 .copy {
   padding: 0 50px 15px 50px; }
 
-ul.list.role-list {
-  list-style-type: none;
-  padding: 20px 50px 25px 50px; }
+ul.list,
+ol.list {
+  font-family: "Playfair Display", serif;
+  color: #030b08;
+  font-size: 18px;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  margin: 15px 0 25px 0;
+  padding: 5px 50px 0 90px; }
 
-ul.list.role-list li {
-  font-family: "Montserrat", sans-serif;
-  padding-bottom: 15px; }
+ul.list.timeline-card,
+ol.list.timeline-card {
+  margin-top: 0;
+  padding: 0 50px 0 50px; }
+
+ul.list li,
+ol.list li {
+  margin: 0;
+  padding: 0 0 10px 0; }
 
 .client-brand {
   width: 225px;
@@ -189,7 +203,7 @@ ul.list.role-list li {
   margin: 0; }
 
 .interval > .copy {
-  padding: 0;
+  padding: 0 0 15px 0;
   margin: 0; }
 
 .subinterval > .subtitle {
@@ -201,8 +215,7 @@ ul.list.role-list li {
   margin: 0; }
 
 .subinterval > .copy {
-  padding: 0 0 0 0;
-  margin: 0; }
+  padding: 0 0 0 0; }
 
 .timeline--img-row {
   display: grid;
@@ -319,6 +332,40 @@ ul.list.role-list li {
   @media (max-width: 700px) {
     .stripe_stat-container .copy--stat {
       padding: 0 50px; } }
+
+.code {
+  width: 100%;
+  height: auto;
+  background: #030b08;
+  margin-bottom: 25px;
+  padding: 25px 50px 25px 50px;
+  border-radius: 2px; }
+  @media (max-width: 700px) {
+    .code {
+      padding: 5px 25px 15px 25px;
+      margin-left: -50px;
+      margin-right: -50px;
+      width: calc(100% + 100px); } }
+
+.block {
+  color: #04D786;
+  font-family: "Source Code Pro", monospace;
+  text-align: left;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400; }
+  @media (max-width: 700px) {
+    .block {
+      font-size: 10px; } }
+
+.block > .blue {
+  color: #5CCDFA; }
+
+.block > .white {
+  color: white; }
+
+.block > .pink {
+  color: #EA3F85; }
 
 .pager {
   -webkit-animation: color-change-2x 10s linear infinite alternate both;
