@@ -11,7 +11,7 @@
 			<link rel="apple-touch-icon" href="../images/icon-192.png">
 		<!-- JS (That's Necessary in <head>) -->
 			<!-- SVG.JS -->
-			<script src="../../javascripts/plugins/svg.min.js" async></script>
+			<script src="/javascripts/plugins/svg.min.js" async></script>
 		<!-- CSS -->
 			<!-- UI -->
 			<link rel="stylesheet" href="/stylesheets/css/ui.min.css" rel="preload" as="style" />
@@ -20,7 +20,7 @@
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 			<!-- Hero Image -->
 			<style>
-				.hero {background-image: url('/images/case-studies/overview/overview_opb-wireframe-loop.gif');}
+				.hero {background-image: url('/images/case-studies/lazyouts/layout-video@2x.gif');}
 			</style>
 	</head>
 	<body>
@@ -80,7 +80,11 @@
 					<!-- <h4 class="subtitle">User Story</h4> -->
 					<!-- <p class="copy">As a product manager, I’ve seen our codebase grow and inconsistency creep over the past couple years of our product’s development. While our team aims for consistency, we sometimes miss the mark. Part of this is due to our reliance on a popular component library that is the underlying skeleton of our interfaces. Inconsistencies that stem from overriding the component libraries visually opinionated defaults ultimately lead to common UI components like cards being built in different ways in different places. We’ve found that this introduces visual inconsistency at best, while at worse creating bugs, developer confusion, loss of time, among other things as a product manager I would like to limit.</p> -->
 					<h4 class="subtitle">Who</h4>
-					<p class="copy">Product Manager, Junior Level Developer, Senior Level Developer</p>
+					<ul class="list">
+						<li>Product Manager</li>
+						<li>Junior Level Developer</li>
+						<li>Senior Level Developer</li>
+					</ul>
 					<h4 class="subtitle">What</h4>
 					<p class="copy">A front-end framework behind the layout and UI of QuotedCar’s products.</p>
 					<h4 class="subtitle">Why</h4>
@@ -160,12 +164,12 @@
 
 			<div class="stripe_stat-container">
 				<h3 class="title--stat">4</h3>
-				<p class="copy--stat">Different ways a card's HTML &amp; CSS was written in v1.2.1</p>
+				<p class="copy--stat">Different ways a card's HTML &amp; CSS was written in v1.2.1 when layouts and components were built using Bootstrap.</p>
 			</div>
 
 			<div class="stripe_stat-container">
-				<h3 class="title--stat">1</h3>
-				<p class="copy--stat">Senior level developer on the team</p>
+				<h3 class="title--stat">3</h3>
+				<p class="copy--stat">Product team members; a content manager/junior developer, a senior level software developer, and me the product manager/product designer/senior front-end developer.</p>
 			</div>
 
 		</div>
@@ -185,71 +189,173 @@
 
 						<div class="interval">
 							<h4 class="subtitle">Assessing Needs</h4>
-							<p class="copy">We need an internal framework, similar to what we were using before, but simpler, smaller, and better suited to our needs. Let’s slow down for a moment, to speed up how we do things over the long haul.</p>
+							<p class="copy">We need an internal framework, similar to what we were using before, but simpler, smaller, and better suited to our needs.</p>
 							<p class="copy">When we boil it down, what we need falls into a few categories.</p>
 							<ol class="list timeline-card">
 								<li>Layouts</li>
 								<li>UI Components</li>
 								<li>JavaScript helper functions</li>
-								<li>Works in >= IE 10</li>
+								<li>Works in >IE10</li>
 							</ol>
 						</div>
 
-						<!-- <div class="timeline--img-row interval--img-row">
-
-							<img data-srcset=".../../images/case-studies/overview/overview_email-gen@1x.png,
-									   ../../images/case-studies/overview/overview_email-gen@2x.png 2x,
-									   ../../images/case-studies/overview/overview_email-gen@3x.png 3x"
-								data-src="../../images/case-studies/overview/overview_email-gen@3x.png"
-								src="../../images/case-studies/overview/overview_email-gen@3x.png"
-								class="timeline--img-row__img color lazyload modal_trigger--open"
-								alt="Title 1"
-								data-description="Description 1">
-
-							<img data-srcset="../../images/case-studies/overview/overview_qc-logo@1x.png,
-									   ../../images/case-studies/overview/overview_qc-logo@2x.png 2x,
-									   ../../images/case-studies/overview/overview_qc-logo@3x.png 3x"
-								data-src="../../images/case-studies/overview/overview_qc-logo@3x.png"
-								src="../../images/case-studies/overview/overview_qc-logo@3x.png"
-								class="timeline--img-row__img color lazyload modal_trigger--open"
-								alt="Title 2"
-								data-description="Description 2">
-
-						</div> -->
-
 						<div class="interval">
 							<h4 class="subtitle">Wireframing</h4>
-							<!-- <p class="copy">XXXXX.</p> -->
 						</div>
 
-						<!-- <div class="subinterval">
-							<h4 class="subtitle">Example Subinterval Title</h4>
-							<p class="copy">Example Subinterval paragraph</p>
-						</div> -->
+						<div class="subinterval">
+							<h4 class="subtitle">Layouts</h4>
+							<p class="copy">Laying a foundation for the framework's cards and components.</p>
+							<div class="grid_1 timeline--img-row interval--img-row img-row--stack">
 
-						<div class="interval">
-							<h4 class="subtitle">Visual Design</h4>
-							<!-- <p class="copy">XXXXX.</p> -->
+	 							<img data-srcset="/images/case-studies/lazyouts/layout-video@1x.gif,
+	 									   /images/case-studies/lazyouts/layout-video@2x.gif 2x"
+	 								data-src="/images/case-studies/lazyouts/layout-video@2x.gif"
+	 								src="/images/case-studies/lazyouts/layout-video@2x.gif"
+	 								class="timeline--img-row__img color lazyload modal_trigger--open"
+	 								alt="4 Column Card Grid"
+	 								data-description="">
+
+							</div>
+							<div class="grid_3 timeline--img-row interval--img-row">
+
+								<img data-srcset="/images/case-studies/lazyouts/layout-sidebar-left-layout@1x.png,
+										   /images/case-studies/lazyouts/layout-sidebar-left-layout@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/layout-sidebar-left-layout@2x.png"
+									src="/images/case-studies/lazyouts/layout-sidebar-left-layout@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Left Sidebar Layout"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/layout-12-column-grid@1x.png,
+										   /images/case-studies/lazyouts/layout-12-column-grid@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/layout-12-column-grid@2x.png"
+									src="/images/case-studies/lazyouts/layout-12-column-grid@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Equally Spaced Column Grid"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/layout-sidebar-right-layout@1x.png,
+										   /images/case-studies/lazyouts/layout-sidebar-right-layout@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/layout-sidebar-right-layout@2x.png"
+									src="/images/case-studies/lazyouts/layout-sidebar-right-layout@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Right Sidebar Layout"
+									data-description="">
+
+							</div>
 						</div>
 
-						<!-- <div class="subinterval">
-							<h4 class="subtitle">Example Subinterval Title</h4>
-							<p class="copy">Example Subinterval paragraph</p>
-						</div> -->
+						<div class="subinterval">
+							<h4 class="subtitle">Cards</h4>
+							<p class="copy">The basic building blocks of the framework.</p>
 
-						<div class="interval">
-							<h4 class="subtitle">Prototyping</h4>
-							<!-- <p class="copy">XXXXX.</p> -->
+							<div class="grid_3 timeline--img-row interval--img-row">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-card-4-column@1x.png,
+										   /images/case-studies/lazyouts/wireframe-card-4-column@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-card-4-column@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-card-4-column@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="4 Column Card Grid"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-card-6-column@1x.png,
+										   /images/case-studies/lazyouts/wireframe-card-6-column@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-card-6-column@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-card-6-column@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="6 Column Card"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-card-12-column@1x.png,
+										   /images/case-studies/lazyouts/wireframe-card-12-column@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-card-12-column@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-card-12-column@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="12 Column Card"
+									data-description="">
+
+							</div>
+
 						</div>
 
-						<!-- <div class="subinterval">
-							<h4 class="subtitle">Example Subinterval Title</h4>
-							<p class="copy">Example Subinterval paragraph</p>
-						</div> -->
+						<div class="subinterval">
+							<h4 class="subtitle">Components</h4>
+							<p class="copy">Modals, progress bar, tabs, multi-steps, and system feedback notifications amongst others.</p>
+
+							<div class="grid_4 timeline--img-row interval--img-row">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-card-progress-bar@1x.png,
+										   /images/case-studies/lazyouts/wireframe-card-progress-bar@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-card-progress-bar@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-card-progress-bar@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Modal &amp; Progress Bar Components"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-tabs@1x.png,
+										   /images/case-studies/lazyouts/wireframe-tabs@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-tabs@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-tabs@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Card Tab Component"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-multi-step@1x.png,
+										   /images/case-studies/lazyouts/wireframe-multi-step@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-multi-step@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-multi-step@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Multi-Step Card Component"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-system-feedback@1x.png,
+										   /images/case-studies/lazyouts/wireframe-system-feedback@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-system-feedback@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-system-feedback@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="System Feedback Notification Component"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-card-dropdown@1x.png,
+										   /images/case-studies/lazyouts/wireframe-card-dropdown@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-card-dropdown@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-card-dropdown@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Card Dropdown Menu Component"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-card-rows-with-menus@1x.png,
+										   /images/case-studies/lazyouts/wireframe-card-rows-with-menus@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-card-rows-with-menus@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-card-rows-with-menus@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Card Rows with Menu Component"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-single-card-with-sidebar-and-menu@1x.png,
+										   /images/case-studies/lazyouts/wireframe-single-card-with-sidebar-and-menu@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-single-card-with-sidebar-and-menu@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-single-card-with-sidebar-and-menu@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Slide-in Flex Menu Component"
+									data-description="For enhanced options and controls launched from a card.">
+
+								<img data-srcset="/images/case-studies/lazyouts/wireframe-heros@1x.png,
+										   /images/case-studies/lazyouts/wireframe-heros@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/wireframe-heros@2x.png"
+									src="/images/case-studies/lazyouts/wireframe-heros@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Hero Component"
+									data-description="">
+
+							</div>
+
+						</div>
 
 						<div class="interval">
-							<h4 class="subtitle">Development</h4>
-							<!-- <p class="copy"></p> -->
+							<h4 class="subtitle">Front-End Development</h4>
 						</div>
 
 						<div class="subinterval">
@@ -260,71 +366,185 @@
 								<li>Left-side sidebars up to 50% width</li>
 								<li>Right-side sidebars up to 50% width</li>
 							</ol>
-							<p class="copy">Here's an example of the mixin I built to generate the 12 column layout classes we needed in the framework:</p>
+							<p class="copy">Here's an example of a mixin I built to generate the 12 column layout classes we needed for the framework's equally spaced grid layout. Vendor prefixing to meet our need of "Works in >IE10" was provided by <a href="https://autoprefixer.github.io/">Autoprefixer</a>.</p>
 							<div class="code">
+								<div class="tags">
+									<div class="tag">SASS</div>
+								</div>
 								<p class="block">
-									<span class="blue">// Mixin #1 Example: Equally Spaced Columns Layout</span><br>
+
+									<span class="blue">// Part 1. Grid Properties Shared by All Columns</span><br>
+									.layout <span class="white">{</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">display:</span> grid<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">display:</span> -ms-grid<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">align-items:</span> stretch<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">-webkit-box-align:</span> stretch<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">-ms-flex-align:</span> stretch<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">justify-content:</span> center<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">-webkit-box-pack:</span> center<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">-ms-flex-pack:</span> center<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">grid-row-gap:</span> 25px<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">grid-column-gap:</span> 25px<span class="white">;</span><br>
+									<span class="white">}</span><br><br>
+
+									<span class="blue">// Part 2. SASS Mixin Example: Equally Spaced Columns Layout</span><br>
 									<span class="white">@mixin</span> grid<span class="white">(</span>$columns<span class="white">,</span> $areas<span class="white">)</span> <span class="white">{</span><br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">-ms-grid-columns:</span> <span class="white">(</span><span class="pink">1fr</span><span class="white">)[</span>$columns<span class="white">]</span>;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">grid-template-columns:</span> repeat<span class="white">(</span>$columns, <span class="pink">1fr</span><span class="white">)</span>;<br>
-									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">grid-template-areas:</span> $areas;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">-ms-grid-columns:</span> <span class="white">(</span><span class="pink">1fr</span><span class="white">)[</span>$columns<span class="white">]</span><span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">grid-template-columns:</span> repeat<span class="white">(</span>$columns<span class="white">,</span> <span class="pink">1fr</span><span class="white">)</span><span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">grid-template-areas:</span> $areas<span class="white">;</span><br>
 									<span class="white">}</span>
 									<br><br>
 									<span class="blue">// 1 Column Grid Layout Example Class</span><br>
 									.col_1 <span class="white">{</span><br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">@include</span> grid<span class="white">(</span><span class="pink">1</span><span class="white">,</span> <span class="white">"</span><span class="pink">col</span><span class="white">")</span>;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">@include</span> grid<span class="white">(</span><span class="pink">1</span><span class="white">,</span> <span class="white">"</span><span class="pink">col</span><span class="white">")</span><span class="white">;</span><br>
 									<span class="white">}</span>
 									<br><br>
 									<span class="blue">// 2 Column Grid Layout Example Class</span><br>
 									.col_2 <span class="white">{</span><br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">@include</span> grid<span class="white">(</span><span class="pink">2</span><span class="white">,</span> <span class="white">"</span><span class="pink">col col</span><span class="white">")</span>;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">@include</span> grid<span class="white">(</span><span class="pink">2</span><span class="white">,</span> <span class="white">"</span><span class="pink">col col</span><span class="white">")</span><span class="white">;</span><br>
 									<span class="white">}</span>
 									<br><br>
 									<span class="blue">// 3 Column Grid Layout Example Class</span><br>
 									.col_3 <span class="white">{</span><br>
-										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">@include</span> grid<span class="white">(</span><span class="pink">3</span><span class="white">,</span> <span class="white">"</span><span class="pink">col col col</span><span class="white">")</span>;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">@include</span> grid<span class="white">(</span><span class="pink">3</span><span class="white">,</span> <span class="white">"</span><span class="pink">col col col</span><span class="white">")</span><span class="white">;</span><br>
 									<span class="white">}</span>
 									<br><br>
 									<span class="blue">// ... through 12 columns</span><br>
 								</p>
 							</div>
+						</div>
 
-							<p class="copy">Using SASS mixins benefited us the most because it limits the maintenance of every layout class built into the framework to only having to deal with three blocks of code.</p>
-							<p class="copy">Each layout class is fully nestable in the others, creating nearly unlimited possibilities. The framework is also fully responsive with breakpoints to cover mobile, tablet, desktop and above.</p>
+						<div class="subinterval">
+							<h4 class="subtitle">HTML</h4>
+							<p class="copy">With the SASS in place, a <span class="code--inline">&lt;div&gt;</span> is used to create a new layout in the HTML by giving it the <span class="code--inline">layout</span> class, which contains the grid properties that are shared by all of the layout columns.</p>
+							<p class="copy">Then classes for the layout's column structure are added. The class <span class="code--inline">col_4</span> is used in this simplified example to give the layout we're creating four columns. This helps in keeping the compiled CSS DRY, and is also an indicator in the HTML for a structural element.</p>
+							<div class="code">
+								<div class="tags">
+									<div class="tag">HTML</div>
+								</div>
+								<p class="block">
+									<span class="white">&lt;</span>div class<span class="white">=&quot;</span><span class="pink">layout col_4</span><span class="white">&quot;&gt;</span><br >
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;!-- Child &lt;div&gt;s here become layout columns --&gt;</span><br>
+									<span class="white">&lt;/</span>div<span class="white">&gt;</span>
+								</p>
+							</div>
+
+							<p class="copy">The framework is also fully responsive with breakpoints to cover mobile, tablet, desktop and more. For simplicity in the code example used above, the additional column classes were not included. In production, the framework's HTML would look more like this:</p>
+
+							<div class="code">
+								<div class="tags">
+									<div class="tag">HTML</div>
+								</div>
+								<p class="block">
+
+									<span class="white">&lt;</span>div class<span class="white">=&quot;</span><span class="pink">layout d_4c t_2c m_1c</span><span class="white">&quot;&gt;</span><br >
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;!-- Child &lt;div&gt;s here become layout columns --&gt;</span><br>
+									<span class="white">&lt;/</span>div<span class="white">&gt;</span>
+
+								</p>
+							</div>
+
+							<p class="copy">Where the class names indicate the layout type for each specific breakpoint:</p>
+
+							<ul class="list">
+								<li><span class="code--inline">d_4c</span> = 4 columns on desktops and larger screens (&gt;=1301px)</li>
+								<li><span class="code--inline">t_2c</span> = 2 columns on tablets (&lt;=1300px)</li>
+								<li><span class="code--inline">m_1c</span> = 1 column on mobile (&lt;=700px)</li>
+							</ul>
+
+							<p class="copy">For added flexibility, each layout class is fully nestable in the others, creating nearly unlimited possibilities to build a layout.</p>
+
+							<div class="grid_2 timeline--img-row interval--img-row">
+
+								{{!--
+								<img data-srcset="/images/case-studies/lazyouts/layout-nested-layouts-example-01@1x.png,
+										   /images/case-studies/lazyouts/layout-nested-layouts-example-01@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/layout-nested-layouts-example-01@2x.png"
+									src="/images/case-studies/lazyouts/layout-nested-layouts-example-01@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Nested Layout Example"
+									data-description="">
+								--}}
+
+								<img data-srcset="/images/case-studies/lazyouts/layout-nested-layouts-example-02@1x.png,
+										   /images/case-studies/lazyouts/layout-nested-layouts-example-02@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/layout-nested-layouts-example-02@2x.png"
+									src="/images/case-studies/lazyouts/layout-nested-layouts-example-02@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Nested Layout Example"
+									data-description="">
+
+								<img data-srcset="/images/case-studies/lazyouts/layout-nested-layouts-example-03@1x.png,
+										   /images/case-studies/lazyouts/layout-nested-layouts-example-03@2x.png 2x"
+									data-src="/images/case-studies/lazyouts/layout-nested-layouts-example-03@2x.png"
+									src="/images/case-studies/lazyouts/layout-nested-layouts-example-03@2x.png"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Nested Layout Example"
+									data-description="">
+
+							</div>
+
+
 						</div>
 
 						<div class="subinterval">
 							<h4 class="subtitle">JavaScript &amp; jQuery</h4>
-							<p class="copy">Behind the scenes of the framework’s layouts and components are a set of utility functions. These utility functions were built in JavaScript and jQuery to assist with dynamic actions the UI would need to contain including tabs, navigation, lazy loading images, and system feedback. </p>
-							<p class="copy">My personal favorite utility function takes a background color and dynamically applies a properly contrasting white or black color to the text that sits on the layer above it. Using this function is a great boost to the product’s usability as it always ensures text is readable, no matter what content is thrown at it.</p>
+							<p class="copy">Behind the scenes of the framework’s layouts and components are a set of utility functions. These utility functions were built in JavaScript and jQuery to assist with dynamic actions the UI would need to contain to power certain UI features like:</p>
+							<ul class="list">
+								<li>Navigation</li>
+								<li>Dropdown menus</li>
+								<li>Collapsable containers</li>
+								<li>Tabbed cards</li>
+								<li>Multi-Step cards</li>
+								<li>Swiping cards</li>
+								<li>Card row menus</li>
+								<li>Modals</li>
+								<li>Lazy loading images</li>
+								<li>System feedback notifications</li>
+							</ul>
+							<p class="copy">Here's an example utility function which is used to show &amp; hide collapsable content containers.</p>
+
+							<div class="code">
+								<div class="tags">
+									<div class="tag">JavaScript</div>
+									<div class="tag">jQuery</div>
+								</div>
+								<p class="block">
+									<span class="white">const</span> <span class="pink">TRIGGER</span> = '.trigger > .btn'<span class="white">;</span><br><br>
+									<span class="white">function</span> manageCollapsableContainer<span class="white">()</span> <span class="white">{</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">// Collapsable Content Corresponding to Trigger</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">let</span> <span class="pink">content</span> = $(<span class="pink">this</span>)<span class="white">.</span>closest(<span class="pink">'.container'</span>).siblings(<span class="pink">'.content'</span>)<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">// Toggle the Trigger Button's Active State</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="pink">this</span>)<span class="white">.</span>toggleClass(<span class="pink">'active'</span>)<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">// Toggle the Collapsable Content</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">if</span> <span class="white">(!</span><span class="pink">content</span><span class="white">.</span>hasClass(<span class="pink">'hide'</span>)<span class="white">)</span> <span class="white">{</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">// Content Showing, Update Trigger Icon &amp; Content State</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="pink">this</span>)<span class="white">.</span>find(<span class="pink">'.material-icons'</span>)<span class="white">.</span>html(<span class="pink">'add'</span>)<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">content</span><span class="white">.</span>removeClass(<span class="pink">'show'</span>)<span class="white">.</span>addClass(<span class="pink">'hide'</span>)<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">} else {</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">// Content Hiding, Update Trigger Icon &amp; Content State</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(<span class="pink">this</span>)<span class="white">.</span>find(<span class="pink">'.material-icons'</span>)<span class="white">.</span>html(<span class="pink">'remove'</span>)<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="pink">content</span><span class="white">.</span>removeClass(<span class="pink">'hide'</span>)<span class="white">.</span>addClass(<span class="pink">'show'</span>)<span class="white">;</span><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="white">}</span><br>
+									<span class="white">}</span><br><br>
+									<span class="blue">// Call the Function When the Trigger is Clicked</span><br>
+									$<span class="white">(</span>document<span class="white">).</span>on(<span class="pink">'click'</span><span class="white">,</span> <span class="pink">TRIGGER</span><span class="white">,</span> <span class="pink">manageCollapsableContainer</span>)<span class="white">;</span><br>
+								</p>
+							</div>
+							<p class="copy">My personal favorite utility function takes a background color and dynamically applies a properly contrasting white or black color to the text that sits on the layer above it. Using this function is a great boost to the product’s usability as it always ensures text is readable, no matter what content is thrown at it. Here's an example of this utility function being turned on and off as it applies to the names of a vehicle's exterior and interior colors in QuotedCar.</p>
+							<div class="grid_1 timeline--img-row interval--img-row">
+
+								<img data-srcset="/images/case-studies/lazyouts/js-color-utility@1x.gif,
+										   /images/case-studies/lazyouts/js-color-utility@2x.gif 2x"
+									data-src="/images/case-studies/lazyouts/js-color-utility@2x.gif"
+									src="/images/case-studies/lazyouts/js-color-utility@2x.gif"
+									class="timeline--img-row__img color lazyload modal_trigger--open"
+									alt="Nested Layout Example"
+									data-description="">
+
+							</div>
+
 						</div>
-
-						<!-- <div class="timeline--img-row interval--img-row">
-
-							<img data-srcset=".../../images/case-studies/overview/overview_email-gen@1x.png,
-									   ../../images/case-studies/overview/overview_email-gen@2x.png 2x,
-									   ../../images/case-studies/overview/overview_email-gen@3x.png 3x"
-								data-src="../../images/case-studies/overview/overview_email-gen@3x.png"
-								src="../../images/case-studies/overview/overview_email-gen@3x.png"
-								class="timeline--img-row__img color lazyload modal_trigger--open"
-								alt="Title 1"
-								data-description="Description 1">
-
-							<img data-srcset="../../images/case-studies/overview/overview_qc-logo@1x.png,
-									   ../../images/case-studies/overview/overview_qc-logo@2x.png 2x,
-									   ../../images/case-studies/overview/overview_qc-logo@3x.png 3x"
-								data-src="../../images/case-studies/overview/overview_qc-logo@3x.png"
-								src="../../images/case-studies/overview/overview_qc-logo@3x.png"
-								class="timeline--img-row__img color lazyload modal_trigger--open"
-								alt="Title 2"
-								data-description="Description 2">
-
-						</div> -->
-
-						<!-- <div class="subinterval">
-							<h4 class="subtitle">Example Subinterval Title</h4>
-							<p class="copy">Example Subinterval paragraph</p>
-						</div> -->
 
 					</div>
 

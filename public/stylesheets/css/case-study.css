@@ -227,6 +227,9 @@ ol.list li {
     .timeline--img-row {
       grid-template-columns: repeat(1, 1fr); } }
 
+.timeline--img-row.img-row--stack {
+  margin-bottom: 25px; }
+
 .timeline--img-row.grid_1 {
   grid-template-columns: repeat(1, 1fr); }
 
@@ -333,26 +336,42 @@ ol.list li {
     .stripe_stat-container .copy--stat {
       padding: 0 50px; } }
 
+.code--inline {
+  font-family: "Source Code Pro", monospace;
+  color: #EA3F85; }
+
 .code {
   width: 100%;
   height: auto;
   background: #030b08;
   margin-bottom: 25px;
-  padding: 25px 50px 25px 50px;
-  border-radius: 2px; }
+  padding: 35px 50px 25px 50px;
+  border-radius: 2px;
+  position: relative; }
+  @media (max-width: 1300px) {
+    .code {
+      padding-top: 40px; } }
   @media (max-width: 700px) {
     .code {
-      padding: 5px 25px 15px 25px;
+      padding: inherit 25px 15px 25px;
       margin-left: -50px;
       margin-right: -50px;
       width: calc(100% + 100px); } }
+
+.code > .tags {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  right: 0; }
 
 .block {
   color: #04D786;
   font-family: "Source Code Pro", monospace;
   text-align: left;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 24px;
   font-weight: 400; }
   @media (max-width: 700px) {
     .block {

@@ -521,6 +521,10 @@
 						}
 					}
 
+					.timeline--img-row.img-row--stack {
+						margin-bottom: 25px;
+					}
+
 					.timeline--img-row.grid_1 {
 						grid-template-columns: repeat(1, 1fr);
 					}
@@ -724,30 +728,54 @@
 // Code Examples
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.code--inline {
+	font-family: $font-code;
+	color: #EA3F85;
+	// color: $black-100;
+	// text-align: left;
+	// font-size: 14px;
+	// line-height: 26px;
+	// font-weight: 400;
+}
+
 .code {
 	width: 100%;
 	height: auto;
 	background: $black-100;
 	margin-bottom: 25px;
-	padding: 25px 50px 25px 50px;
+	padding: 35px 50px 25px 50px;
 	border-radius: 2px;
+	position: relative;
 	@media (max-width: 1300px) {
-
+		padding-top: 40px
 	}
 	@media (max-width: 700px) {
-		padding: 5px 25px 15px 25px;
+		padding: inherit 25px 15px 25px;
 		margin-left: -50px;
 		margin-right: -50px;
 		width: calc(100% + 100px);
 	}
 }
 
+		.code > .tags {
+			width: auto;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+				top: 5px;
+				right: 0;
+		}
+
+			.code > .tag > .tags {
+
+			}
+
 	.block {
 		color: #04D786;
 		font-family: $font-code;
 		text-align: left;
-		font-size: 14px;
-		line-height: 26px;
+		font-size: 12px;
+		line-height: 24px;
 		font-weight: 400;
 		@media (max-width: 1300px) {
 
