@@ -17,7 +17,7 @@
     "express-http-to-https": "^1.1.4",
     "firebase-admin": "^8.6.0",
     "firebase-functions": "^3.3.0",
-    "handlebars": "^4.7.2",
+    "handlebars": "^4.7.7",
     "hbs": "^4.1.0",
     "lazysizes": "^5.2.0",
     "path": "^0.12.7"
